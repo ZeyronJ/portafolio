@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Experience from './components/Experience';
 
@@ -19,7 +18,7 @@ function App() {
 
   return (
     <div
-      className='relative bg-slate-900 h-full overflow-auto'
+      className='relative bg-slate-900 h-full overflow-auto '
       onMouseMove={updateCursorPosition}
     >
       <div
@@ -33,7 +32,6 @@ function App() {
       <Home />
       <Experience />
       <Projects />
-      <Contact />
       <Footer />
     </div>
   );

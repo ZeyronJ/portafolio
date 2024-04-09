@@ -1,21 +1,34 @@
 import React from 'react';
 
 function Nav() {
+  const handleMenuClick = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    const headerOffset = 60; // Ajusta según la altura del encabezado
+    const offsetTop =
+      section.getBoundingClientRect().top + window.scrollY - headerOffset;
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className='w-full border-b border-b-slate-950 fixed bg-slate-950/50 backdrop-filter backdrop-blur-sm z-10 shadow-md'>
-      <div className='flex w-3/5 m-auto justify-end py-4'>
+      <div className='flex w-full lg:w-3/4 mx-auto justify-center lg:justify-end py-4 max-w-[1100px]'>
         <ul className='flex text-slate-200'>
           <li className='mr-4 font-medium'>
-            <button>Inicio</button>
+            <button onClick={() => handleMenuClick('inicio')}>Inicio</button>
           </li>
           <li className='mr-4 font-medium'>
-            <button>Experiencia</button>
+            <button onClick={() => handleMenuClick('experience')}>
+              Experiencia
+            </button>
           </li>
-          <li className='mr-4 font-medium'>
-            <button>Proyectos</button>
-          </li>
-          <li className='mr-4 font-medium'>
-            <button>Contacto</button>
+          <li className='font-medium'>
+            <button onClick={() => handleMenuClick('projects')}>
+              Proyectos
+            </button>
           </li>
         </ul>
       </div>

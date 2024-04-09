@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Gallery from './Gallery';
 
 function Experience() {
   const experiences = [
@@ -40,6 +41,48 @@ function Experience() {
         'Git',
         'HTML & CSS',
       ],
+      images: [
+        {
+          original: '/src/assets/experiences/obras1.png',
+          thumbnail: '/src/assets/experiences/obras1.png',
+        },
+        {
+          original: '/src/assets/experiences/obras2.png',
+          thumbnail: '/src/assets/experiences/obras2.png',
+        },
+        {
+          original: '/src/assets/experiences/obras3.png',
+          thumbnail: '/src/assets/experiences/obras3.png',
+        },
+        {
+          original: '/src/assets/experiences/obras4.png',
+          thumbnail: '/src/assets/experiences/obras4.png',
+        },
+        {
+          original: '/src/assets/experiences/obras5.png',
+          thumbnail: '/src/assets/experiences/obras5.png',
+        },
+        {
+          original: '/src/assets/experiences/obras6.png',
+          thumbnail: '/src/assets/experiences/obras6.png',
+        },
+        {
+          original: '/src/assets/experiences/obras7.png',
+          thumbnail: '/src/assets/experiences/obras7.png',
+        },
+        {
+          original: '/src/assets/experiences/obras8.png',
+          thumbnail: '/src/assets/experiences/obras8.png',
+        },
+        {
+          original: '/src/assets/experiences/obras9.png',
+          thumbnail: '/src/assets/experiences/obras9.png',
+        },
+        {
+          original: '/src/assets/experiences/obras10.png',
+          thumbnail: '/src/assets/experiences/obras10.png',
+        },
+      ],
     },
     {
       dates: 'Agosto 2022 - Noviembre 2022',
@@ -80,24 +123,86 @@ function Experience() {
         'Git',
         'HTML & CSS',
       ],
+      images: [
+        {
+          original: '/src/assets/experiences/documentos1.png',
+          thumbnail: '/src/assets/experiences/documentos1.png',
+        },
+        {
+          original: '/src/assets/experiences/documentos2.png',
+          thumbnail: '/src/assets/experiences/documentos2.png',
+        },
+        {
+          original: '/src/assets/experiences/documentos3.png',
+          thumbnail: '/src/assets/experiences/documentos3.png',
+        },
+        {
+          original: '/src/assets/experiences/documentos4.png',
+          thumbnail: '/src/assets/experiences/documentos4.png',
+        },
+        {
+          original: '/src/assets/experiences/documentos5.png',
+          thumbnail: '/src/assets/experiences/documentos5.png',
+        },
+        {
+          original: '/src/assets/experiences/documentos6.png',
+          thumbnail: '/src/assets/experiences/documentos6.png',
+        },
+        {
+          original: '/src/assets/experiences/documentos7.png',
+          thumbnail: '/src/assets/experiences/documentos7.png',
+        },
+        {
+          original: '/src/assets/experiences/documentos8.png',
+          thumbnail: '/src/assets/experiences/documentos8.png',
+        },
+        {
+          original: '/src/assets/experiences/documentos9.png',
+          thumbnail: '/src/assets/experiences/documentos9.png',
+        },
+        {
+          original: '/src/assets/experiences/documentos10.png',
+          thumbnail: '/src/assets/experiences/documentos10.png',
+        },
+      ],
     },
   ];
 
   const [expandedIndexes, setExpandedIndexes] = useState([]);
 
-  const handleToggleExpand = (index) => {
-    if (expandedIndexes.includes(index)) {
-      setExpandedIndexes(expandedIndexes.filter((item) => item !== index));
-    } else {
-      setExpandedIndexes([...expandedIndexes, index]);
+  const [showGallery, setShowGallery] = useState([]);
+
+  useEffect(() => {
+    console.log('useEffect');
+    const initialArray = [];
+    for (let i = 0; i < experiences.length; i++) {
+      initialArray.push(false);
     }
+    setExpandedIndexes(initialArray);
+    setShowGallery(initialArray);
+  }, []);
+
+  const handleToggleExpand = (index) => {
+    setExpandedIndexes((prevState) => {
+      const newState = [...prevState];
+      newState[index] = !newState[index]; // Invertir el estado del índice
+      return newState;
+    });
+  };
+  const handleToggleGallery = (index) => {
+    setShowGallery((prevState) => {
+      const newState = [...prevState];
+      newState[index] = !newState[index]; // Invertir el estado del índice
+      return newState;
+    });
   };
 
-  const isExpanded = (index) => expandedIndexes.includes(index);
-
   return (
-    <div className='relative flex flex-col justify-center items-center mt-10 font-medium text-slate-200'>
-      <div className='w-3/5 p-4'>
+    <div
+      className='relative flex flex-col justify-center items-center mt-10 font-medium text-slate-200 '
+      id='experience'
+    >
+      <div className='w-full lg:w-3/4 p-4 max-w-[1100px]'>
         <h1 className='text-3xl font-bold'>Experiencia</h1>
         <ol className='relative border-s border-gray-700'>
           {experiences.map((experience, index) => {
@@ -117,8 +222,8 @@ function Experience() {
                 <time className='mb-1 text-sm font-normal leading-none text-slate-400'>
                   {experience.dates}
                 </time>
-                <p className='mb-4 text-base font-normal'>
-                  {isExpanded(index) ? (
+                <div className='mb-4 text-base font-normal'>
+                  {expandedIndexes[index] ? (
                     <>
                       {experience.descriptionMain}
                       {experience.descriptionNeeds}
@@ -133,18 +238,21 @@ function Experience() {
                     <>
                       {experience.descriptionMain}
                       {experience.descriptionNeeds && (
-                        <button
-                          onClick={() => handleToggleExpand(index)}
-                          className='text-blue-500 hover:underline focus:outline-none'
-                        >
-                          Leer más
-                        </button>
+                        <>
+                          <br />
+                          <button
+                            onClick={() => handleToggleExpand(index)}
+                            className='text-blue-500 hover:underline focus:outline-none'
+                          >
+                            Leer más
+                          </button>
+                        </>
                       )}
                     </>
                   )}
-                </p>
-                <div className='flex items-center'>
-                  <div className='flex flex-wrap w-4/5'>
+                </div>
+                <div className='flex items-center flex-wrap'>
+                  <div className='flex flex-wrap lg:w-4/5 w-full'>
                     {experience.technologies.map((tech, index) => (
                       <div
                         key={index}
@@ -155,11 +263,11 @@ function Experience() {
                     ))}
                   </div>
 
-                  <a
-                    href='#'
-                    className='inline-flex items-center px-4 py-2 text-sm font-medium text-slate-800 bg-slate-200 border border-slate-300 rounded-lg hover:bg-slate-100 hover:text-blue-700'
+                  <button
+                    className='inline-flex items-center px-4 py-2 text-sm font-medium bg-blue-900/90 border border-slate-800 rounded-lg hover:bg-blue-900/60 hover:text-slate-100'
+                    onClick={() => handleToggleGallery(index)}
                   >
-                    Video Demo{' '}
+                    Fotos Demo{' '}
                     <svg
                       className='w-3 h-3 ms-2 rtl:rotate-180'
                       aria-hidden='true'
@@ -175,7 +283,13 @@ function Experience() {
                         d='M1 5h12m0 0L9 1m4 4L9 9'
                       />
                     </svg>
-                  </a>
+                  </button>
+                  {showGallery[index] && (
+                    <Gallery
+                      images={experience.images}
+                      handleClose={() => handleToggleGallery(index)}
+                    />
+                  )}
                 </div>
               </li>
             );
