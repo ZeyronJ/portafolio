@@ -173,7 +173,6 @@ function Experience() {
   const [showGallery, setShowGallery] = useState([]);
 
   useEffect(() => {
-    console.log('useEffect');
     const initialArray = [];
     for (let i = 0; i < experiences.length; i++) {
       initialArray.push(false);

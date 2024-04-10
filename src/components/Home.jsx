@@ -92,9 +92,9 @@ function Home() {
           </div>
           <div className='w-1/2'>
             <img
-              src='/src/assets/todoAngular.png'
+              src='/src/assets/yo2.jpg'
               alt='imagen'
-              className='w-40 h-40 mx-auto rounded-full border-4 border-slate-800'
+              className='w-56 h-54 mx-auto rounded-full border-4 border-blue-900/50 mt-4 2xl:mt-0'
             />
           </div>
         </div>

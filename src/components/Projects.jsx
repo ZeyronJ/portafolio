@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Gallery from './Gallery';
+import Video from './Video';
 
 function Projects() {
   const projects = [
@@ -10,18 +10,18 @@ function Projects() {
         'Aplicacion movil para gestionar deudas, donde puedes agregar, editar, eliminar y marcar como pagada cada deuda, se pueden agregar imagenes.',
       img: '/src/assets/debtManager.png',
       github: 'https://github.com/ZeyronJ/debt-manager',
-      images: [],
       web: '',
+      video: '/src/assets/debtmanager.mp4',
     },
     {
       title: 'Portafolio',
       technologies: ['React', 'TailwindCSS', 'JavaScript', 'HTML & CSS'],
       description:
         'Portafolio personal, donde muestro mi educacion, habilidades, experiencia y proyectos realizados.',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9OHINcJeat-KeEQvdBBiNFRZUFKf_5TauPQ&s',
+      img: '/src/assets/portafolio.png',
       github: 'https://github.com/ZeyronJ/portafolio',
-      images: [],
       web: '#',
+      video: '',
     },
     {
       title: 'App tareas',
@@ -29,25 +29,24 @@ function Projects() {
       description:
         'Aplicacion web simple de lista de tareas, donde puedes agregar, editar, eliminar y marcar como completada cada tarea. Tiene modo oscuro y claro.',
       img: '/src/assets/todoAngular.png',
-      images: [],
       web: 'https://angular-8c514.firebaseapp.com/',
       github: 'https://github.com/ZeyronJ/todo-angular-darkmode',
+      video: '',
     },
   ];
 
-  const [showGallery, setShowGallery] = useState([]);
+  const [showVideos, setShowVideos] = useState([]);
 
   useEffect(() => {
-    console.log('useEffect');
     const initialArray = [];
     for (let i = 0; i < projects.length; i++) {
       initialArray.push(false);
     }
-    setShowGallery(initialArray);
+    setShowVideos(initialArray);
   }, []);
 
-  const handleToggleGallery = (index) => {
-    setShowGallery((prevState) => {
+  const handleToggleVideos = (index) => {
+    setShowVideos((prevState) => {
       const newState = [...prevState];
       newState[index] = !newState[index]; // Invertir el estado del índice
       return newState;
@@ -105,16 +104,15 @@ function Projects() {
                   ) : (
                     <a
                       className='px-4 py-2 bg-blue-900/90 border-slate-800 border rounded-lg text-slate-50 flex gap-2 mt-2 hover:bg-blue-900/60 hover:text-slate-100 cursor-pointer'
-                      onClick={() => handleToggleGallery(index)}
+                      onClick={() => handleToggleVideos(index)}
                     >
-                      Fotos Demo
+                      Video Demo
                     </a>
                   )}
-
-                  {showGallery[index] && (
-                    <Gallery
-                      images={project.images}
-                      handleClose={() => handleToggleGallery(index)}
+                  {showVideos[index] && (
+                    <Video
+                      videoUrl={project.video}
+                      handleClose={() => handleToggleVideos(index)}
                     />
                   )}
                 </div>
