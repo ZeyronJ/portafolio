@@ -31,7 +31,7 @@ function Experience() {
           </ul>
         </>
       ),
-      img: 'utaIcon.webp',
+      img: '/utaIcon.webp',
       technologies: [
         'Laravel',
         'PHP',
@@ -43,44 +43,44 @@ function Experience() {
       ],
       images: [
         {
-          original: '/src/assets/experiences/obras1.webp',
-          thumbnail: '/src/assets/experiences/obras1.webp',
+          original: '/experiences/obras1.webp',
+          thumbnail: '/experiences/obras1.webp',
         },
         {
-          original: '/src/assets/experiences/obras2.webp',
-          thumbnail: '/src/assets/experiences/obras2.webp',
+          original: '/experiences/obras2.webp',
+          thumbnail: '/experiences/obras2.webp',
         },
         {
-          original: '/src/assets/experiences/obras3.webp',
-          thumbnail: '/src/assets/experiences/obras3.webp',
+          original: '/experiences/obras3.webp',
+          thumbnail: '/experiences/obras3.webp',
         },
         {
-          original: '/src/assets/experiences/obras4.webp',
-          thumbnail: '/src/assets/experiences/obras4.webp',
+          original: '/experiences/obras4.webp',
+          thumbnail: '/experiences/obras4.webp',
         },
         {
-          original: '/src/assets/experiences/obras5.webp',
-          thumbnail: '/src/assets/experiences/obras5.webp',
+          original: '/experiences/obras5.webp',
+          thumbnail: '/experiences/obras5.webp',
         },
         {
-          original: '/src/assets/experiences/obras6.webp',
-          thumbnail: '/src/assets/experiences/obras6.webp',
+          original: '/experiences/obras6.webp',
+          thumbnail: '/experiences/obras6.webp',
         },
         {
-          original: '/src/assets/experiences/obras7.webp',
-          thumbnail: '/src/assets/experiences/obras7.webp',
+          original: '/experiences/obras7.webp',
+          thumbnail: '/experiences/obras7.webp',
         },
         {
-          original: '/src/assets/experiences/obras8.webp',
-          thumbnail: '/src/assets/experiences/obras8.webp',
+          original: '/experiences/obras8.webp',
+          thumbnail: '/experiences/obras8.webp',
         },
         {
-          original: '/src/assets/experiences/obras9.webp',
-          thumbnail: '/src/assets/experiences/obras9.webp',
+          original: '/experiences/obras9.webp',
+          thumbnail: '/experiences/obras9.webp',
         },
         {
-          original: '/src/assets/experiences/obras10.webp',
-          thumbnail: '/src/assets/experiences/obras10.webp',
+          original: '/experiences/obras10.webp',
+          thumbnail: '/experiences/obras10.webp',
         },
       ],
     },
@@ -113,7 +113,7 @@ function Experience() {
           </ul>
         </>
       ),
-      img: 'uchileIcon.webp',
+      img: '/uchileIcon.webp',
       technologies: [
         'React',
         'Node',
@@ -125,44 +125,44 @@ function Experience() {
       ],
       images: [
         {
-          original: '/src/assets/experiences/documentos1.webp',
-          thumbnail: '/src/assets/experiences/documentos1.webp',
+          original: '/experiences/documentos1.webp',
+          thumbnail: '/experiences/documentos1.webp',
         },
         {
-          original: '/src/assets/experiences/documentos2.webp',
-          thumbnail: '/src/assets/experiences/documentos2.webp',
+          original: '/experiences/documentos2.webp',
+          thumbnail: '/experiences/documentos2.webp',
         },
         {
-          original: '/src/assets/experiences/documentos3.webp',
-          thumbnail: '/src/assets/experiences/documentos3.webp',
+          original: '/experiences/documentos3.webp',
+          thumbnail: '/experiences/documentos3.webp',
         },
         {
-          original: '/src/assets/experiences/documentos4.webp',
-          thumbnail: '/src/assets/experiences/documentos4.webp',
+          original: '/experiences/documentos4.webp',
+          thumbnail: '/experiences/documentos4.webp',
         },
         {
-          original: '/src/assets/experiences/documentos5.webp',
-          thumbnail: '/src/assets/experiences/documentos5.webp',
+          original: '/experiences/documentos5.webp',
+          thumbnail: '/experiences/documentos5.webp',
         },
         {
-          original: '/src/assets/experiences/documentos6.webp',
-          thumbnail: '/src/assets/experiences/documentos6.webp',
+          original: '/experiences/documentos6.webp',
+          thumbnail: '/experiences/documentos6.webp',
         },
         {
-          original: '/src/assets/experiences/documentos7.webp',
-          thumbnail: '/src/assets/experiences/documentos7.webp',
+          original: '/experiences/documentos7.webp',
+          thumbnail: '/experiences/documentos7.webp',
         },
         {
-          original: '/src/assets/experiences/documentos8.webp',
-          thumbnail: '/src/assets/experiences/documentos8.webp',
+          original: '/experiences/documentos8.webp',
+          thumbnail: '/experiences/documentos8.webp',
         },
         {
-          original: '/src/assets/experiences/documentos9.webp',
-          thumbnail: '/src/assets/experiences/documentos9.webp',
+          original: '/experiences/documentos9.webp',
+          thumbnail: '/experiences/documentos9.webp',
         },
         {
-          original: '/src/assets/experiences/documentos10.webp',
-          thumbnail: '/src/assets/experiences/documentos10.webp',
+          original: '/experiences/documentos10.webp',
+          thumbnail: '/experiences/documentos10.webp',
         },
       ],
     },
@@ -210,11 +210,7 @@ function Experience() {
                 <div className='absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700'></div>
                 <h3 className='text-lg font-semibold flex items-center'>
                   <div className='h-12 w-8 flex items-center justify-center mr-1'>
-                    <img
-                      src={`/src/assets/${experience.img}`}
-                      alt='Icono'
-                      className='w-6'
-                    />
+                    <img src={experience.img} alt='Icono' className='w-6' />
                   </div>
                   {experience.title}
                 </h3>

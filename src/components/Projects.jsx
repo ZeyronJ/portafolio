@@ -8,17 +8,17 @@ function Projects() {
       technologies: ['React Native', 'JavaScript', 'TailwindCSS', 'SQLite'],
       description:
         'Aplicación móvil para gestionar deudas, donde puedes agregar, editar y eliminar deudas, se pueden agregar imágenes y audios las deudas para un mayor contexto.',
-      img: '/src/assets/debtManager.webp',
+      img: '/debtmanager.webp',
       github: 'https://github.com/ZeyronJ/debt-manager',
       web: '',
-      video: '/src/assets/debtmanager.mp4',
+      video: '/debtmanager.mp4',
     },
     {
       title: 'Portafolio',
       technologies: ['React', 'TailwindCSS', 'JavaScript', 'HTML & CSS'],
       description:
         'Este es mi portafolio personal, donde presento mi formación académica, habilidades, experiencia y proyectos realizados. Esta diseñado para adaptarse a distintos dispositivos.',
-      img: '/src/assets/portafolio.webp',
+      img: '/portafolio.webp',
       github: 'https://github.com/ZeyronJ/portafolio',
       web: '#',
       video: '',
@@ -28,7 +28,7 @@ function Projects() {
       technologies: ['Angular', 'TypeScript', 'TailwindCSS', 'HTML & CSS'],
       description:
         'Aplicación web simple de lista de tareas, donde puedes agregar, editar, eliminar y marcar como completada cada tarea. Tiene modo oscuro y claro.',
-      img: '/src/assets/todoAngular.webp',
+      img: '/todoAngular.webp',
       web: 'https://angular-8c514.firebaseapp.com/',
       github: 'https://github.com/ZeyronJ/todo-angular-darkmode',
       video: '',
@@ -38,10 +38,10 @@ function Projects() {
       technologies: ['Unity', 'C#', 'Lentes Meta Quest'],
       description:
         'Usando realidad virtual se simula un entorno controlado para la enseñanza de redes de computadores, se pueden realizar pruebas de conexión, configuración de dispositivos, entre otros.',
-      img: '/src/assets/redes.webp',
+      img: '/redes.webp',
       github: 'https://github.com/ZeyronJ/redes-VR',
       web: '',
-      video: '/src/assets/redes.mp4',
+      video: '/redes.mp4',
     },
   ];
 
