@@ -99,7 +99,7 @@ function Home() {
           </div>
         </div>
         <div className='w-full lg:w-3/4 p-4 max-w-[1100px]'>
-          <h2 className='text-2xl font-bold mb-2'>Sobre mi</h2>
+          <h2 className='text-2xl font-bold mb-2'>Sobre mí</h2>
           <p>
             Egresado de Ingeniería Civil en Computación e Informática, me
             apasiona la creación y desarrollo de soluciones tecnológicas
@@ -109,11 +109,11 @@ function Home() {
           </p>
           <div className='flex flex-col lg:flex-row mt-4'>
             <div className='mb-4 lg:mb-0 lg:mr-4'>
-              <h3 className='font-semibold text-lg'>Educacion:</h3>
+              <h3 className='font-semibold text-lg'>Educación:</h3>
               <ul>
                 <li className='text-balance'>
                   Ingeniería Civil en Computación e Informática, Ingeniería de
-                  Software
+                  Software.
                 </li>
                 <li className='italic text-slate-400'>
                   Universidad de Tarapacá | mar. 2018 - feb. 2024
@@ -122,7 +122,7 @@ function Home() {
             </div>
             <div>
               <h3 className='font-semibold text-lg'>
-                Tecnologias principales:
+                Tecnologías principales:
               </h3>
               <div className='grid grid-cols-5 lg:grid-cols-7 gap-2 lg:gap-4 text-xs'>
                 {technologies.map((tech, index) => (

@@ -31,7 +31,7 @@ function Experience() {
           </ul>
         </>
       ),
-      img: 'utaIcon.png',
+      img: 'utaIcon.webp',
       technologies: [
         'Laravel',
         'PHP',
@@ -43,44 +43,44 @@ function Experience() {
       ],
       images: [
         {
-          original: '/src/assets/experiences/obras1.png',
-          thumbnail: '/src/assets/experiences/obras1.png',
+          original: '/src/assets/experiences/obras1.webp',
+          thumbnail: '/src/assets/experiences/obras1.webp',
         },
         {
-          original: '/src/assets/experiences/obras2.png',
-          thumbnail: '/src/assets/experiences/obras2.png',
+          original: '/src/assets/experiences/obras2.webp',
+          thumbnail: '/src/assets/experiences/obras2.webp',
         },
         {
-          original: '/src/assets/experiences/obras3.png',
-          thumbnail: '/src/assets/experiences/obras3.png',
+          original: '/src/assets/experiences/obras3.webp',
+          thumbnail: '/src/assets/experiences/obras3.webp',
         },
         {
-          original: '/src/assets/experiences/obras4.png',
-          thumbnail: '/src/assets/experiences/obras4.png',
+          original: '/src/assets/experiences/obras4.webp',
+          thumbnail: '/src/assets/experiences/obras4.webp',
         },
         {
-          original: '/src/assets/experiences/obras5.png',
-          thumbnail: '/src/assets/experiences/obras5.png',
+          original: '/src/assets/experiences/obras5.webp',
+          thumbnail: '/src/assets/experiences/obras5.webp',
         },
         {
-          original: '/src/assets/experiences/obras6.png',
-          thumbnail: '/src/assets/experiences/obras6.png',
+          original: '/src/assets/experiences/obras6.webp',
+          thumbnail: '/src/assets/experiences/obras6.webp',
         },
         {
-          original: '/src/assets/experiences/obras7.png',
-          thumbnail: '/src/assets/experiences/obras7.png',
+          original: '/src/assets/experiences/obras7.webp',
+          thumbnail: '/src/assets/experiences/obras7.webp',
         },
         {
-          original: '/src/assets/experiences/obras8.png',
-          thumbnail: '/src/assets/experiences/obras8.png',
+          original: '/src/assets/experiences/obras8.webp',
+          thumbnail: '/src/assets/experiences/obras8.webp',
         },
         {
-          original: '/src/assets/experiences/obras9.png',
-          thumbnail: '/src/assets/experiences/obras9.png',
+          original: '/src/assets/experiences/obras9.webp',
+          thumbnail: '/src/assets/experiences/obras9.webp',
         },
         {
-          original: '/src/assets/experiences/obras10.png',
-          thumbnail: '/src/assets/experiences/obras10.png',
+          original: '/src/assets/experiences/obras10.webp',
+          thumbnail: '/src/assets/experiences/obras10.webp',
         },
       ],
     },
@@ -113,7 +113,7 @@ function Experience() {
           </ul>
         </>
       ),
-      img: 'uchileIcon.png',
+      img: 'uchileIcon.webp',
       technologies: [
         'React',
         'Node',
@@ -125,44 +125,44 @@ function Experience() {
       ],
       images: [
         {
-          original: '/src/assets/experiences/documentos1.png',
-          thumbnail: '/src/assets/experiences/documentos1.png',
+          original: '/src/assets/experiences/documentos1.webp',
+          thumbnail: '/src/assets/experiences/documentos1.webp',
         },
         {
-          original: '/src/assets/experiences/documentos2.png',
-          thumbnail: '/src/assets/experiences/documentos2.png',
+          original: '/src/assets/experiences/documentos2.webp',
+          thumbnail: '/src/assets/experiences/documentos2.webp',
         },
         {
-          original: '/src/assets/experiences/documentos3.png',
-          thumbnail: '/src/assets/experiences/documentos3.png',
+          original: '/src/assets/experiences/documentos3.webp',
+          thumbnail: '/src/assets/experiences/documentos3.webp',
         },
         {
-          original: '/src/assets/experiences/documentos4.png',
-          thumbnail: '/src/assets/experiences/documentos4.png',
+          original: '/src/assets/experiences/documentos4.webp',
+          thumbnail: '/src/assets/experiences/documentos4.webp',
         },
         {
-          original: '/src/assets/experiences/documentos5.png',
-          thumbnail: '/src/assets/experiences/documentos5.png',
+          original: '/src/assets/experiences/documentos5.webp',
+          thumbnail: '/src/assets/experiences/documentos5.webp',
         },
         {
-          original: '/src/assets/experiences/documentos6.png',
-          thumbnail: '/src/assets/experiences/documentos6.png',
+          original: '/src/assets/experiences/documentos6.webp',
+          thumbnail: '/src/assets/experiences/documentos6.webp',
         },
         {
-          original: '/src/assets/experiences/documentos7.png',
-          thumbnail: '/src/assets/experiences/documentos7.png',
+          original: '/src/assets/experiences/documentos7.webp',
+          thumbnail: '/src/assets/experiences/documentos7.webp',
         },
         {
-          original: '/src/assets/experiences/documentos8.png',
-          thumbnail: '/src/assets/experiences/documentos8.png',
+          original: '/src/assets/experiences/documentos8.webp',
+          thumbnail: '/src/assets/experiences/documentos8.webp',
         },
         {
-          original: '/src/assets/experiences/documentos9.png',
-          thumbnail: '/src/assets/experiences/documentos9.png',
+          original: '/src/assets/experiences/documentos9.webp',
+          thumbnail: '/src/assets/experiences/documentos9.webp',
         },
         {
-          original: '/src/assets/experiences/documentos10.png',
-          thumbnail: '/src/assets/experiences/documentos10.png',
+          original: '/src/assets/experiences/documentos10.webp',
+          thumbnail: '/src/assets/experiences/documentos10.webp',
         },
       ],
     },

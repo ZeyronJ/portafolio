@@ -10,7 +10,7 @@ function Video({ videoUrl, handleClose }) {
         >
           x
         </button>
-        <video controls className='h-[36rem]'>
+        <video controls className='h-[36rem]' autoPlay>
           <source src={videoUrl} type='video/mp4' />
         </video>
       </div>

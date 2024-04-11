@@ -7,8 +7,8 @@ function Projects() {
       title: 'Debt Manager',
       technologies: ['React Native', 'JavaScript', 'TailwindCSS', 'SQLite'],
       description:
-        'Aplicacion movil para gestionar deudas, donde puedes agregar, editar, eliminar y marcar como pagada cada deuda, se pueden agregar imagenes.',
-      img: '/src/assets/debtManager.png',
+        'Aplicación móvil para gestionar deudas, donde puedes agregar, editar y eliminar deudas, se pueden agregar imágenes y audios las deudas para un mayor contexto.',
+      img: '/src/assets/debtManager.webp',
       github: 'https://github.com/ZeyronJ/debt-manager',
       web: '',
       video: '/src/assets/debtmanager.mp4',
@@ -17,8 +17,8 @@ function Projects() {
       title: 'Portafolio',
       technologies: ['React', 'TailwindCSS', 'JavaScript', 'HTML & CSS'],
       description:
-        'Portafolio personal, donde muestro mi educacion, habilidades, experiencia y proyectos realizados.',
-      img: '/src/assets/portafolio.png',
+        'Este es mi portafolio personal, donde presento mi formación académica, habilidades, experiencia y proyectos realizados. Esta diseñado para adaptarse a distintos dispositivos.',
+      img: '/src/assets/portafolio.webp',
       github: 'https://github.com/ZeyronJ/portafolio',
       web: '#',
       video: '',
@@ -27,11 +27,21 @@ function Projects() {
       title: 'App tareas',
       technologies: ['Angular', 'TypeScript', 'TailwindCSS', 'HTML & CSS'],
       description:
-        'Aplicacion web simple de lista de tareas, donde puedes agregar, editar, eliminar y marcar como completada cada tarea. Tiene modo oscuro y claro.',
-      img: '/src/assets/todoAngular.png',
+        'Aplicación web simple de lista de tareas, donde puedes agregar, editar, eliminar y marcar como completada cada tarea. Tiene modo oscuro y claro.',
+      img: '/src/assets/todoAngular.webp',
       web: 'https://angular-8c514.firebaseapp.com/',
       github: 'https://github.com/ZeyronJ/todo-angular-darkmode',
       video: '',
+    },
+    {
+      title: 'Simulador VR para el área de redes',
+      technologies: ['Unity', 'C#', 'Lentes Meta Quest'],
+      description:
+        'Usando realidad virtual se simula un entorno controlado para la enseñanza de redes de computadores, se pueden realizar pruebas de conexión, configuración de dispositivos, entre otros.',
+      img: '/src/assets/redes.webp',
+      github: 'https://github.com/ZeyronJ/redes-VR',
+      web: '',
+      video: '/src/assets/redes.mp4',
     },
   ];
 
@@ -64,14 +74,14 @@ function Projects() {
             return (
               <div
                 key={index}
-                className='bg-slate-800 rounded-lg overflow-hidden mb-4'
+                className='bg-slate-800 rounded-lg overflow-hidden'
               >
                 <img className='w-full' src={project.img} alt='' />
                 <div className='p-4'>
-                  <h2 className='text-white text-lg font-semibold'>
+                  <h2 className='text-white text-lg font-semibold -mt-2'>
                     {project.title}
                   </h2>
-                  <div className='flex flex-wrap gap-1 mb-2'>
+                  <div className='flex flex-wrap gap-1 my-1'>
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
@@ -81,7 +91,9 @@ function Projects() {
                       </span>
                     ))}
                   </div>
-                  <p className='text-white h-20 '>{project.description}</p>
+                  <p className='text-white h-20 2xl:h-28 text-balance'>
+                    {project.description}
+                  </p>
                 </div>
                 <div className='p-4 flex gap-x-2'>
                   <a
@@ -90,7 +102,7 @@ function Projects() {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    Codigo
+                    Código
                   </a>
                   {project.web !== '' ? (
                     <a
