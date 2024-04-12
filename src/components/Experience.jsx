@@ -210,7 +210,7 @@ function Experience() {
                 <div className='absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700'></div>
                 <h3 className='text-lg font-semibold flex items-center'>
                   <div className='h-12 w-8 flex items-center justify-center mr-1'>
-                    <img src={experience.img} alt='Icono' className='w-6' />
+                    <img src={experience.img} alt='Icono' width={24} />
                   </div>
                   {experience.title}
                 </h3>

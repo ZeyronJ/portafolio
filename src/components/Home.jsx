@@ -18,7 +18,6 @@ import {
   IconGithub,
   IconGmail,
 } from '../helpers/icons';
-import cv from '../assets/cv-javier-mamani.pdf';
 
 function Home() {
   const technologies = [
@@ -71,7 +70,7 @@ function Home() {
             </div>
             <button
               className='px-4 py-2 bg-blue-900/90 border-slate-800 border rounded-lg text-slate-50 flex mt-2 hover:bg-blue-900/60 hover:text-slate-100  gap-2'
-              onClick={() => window.open(cv)}
+              onClick={() => window.open('/cv-javier-mamani.pdf')}
             >
               CV{' '}
               <svg
@@ -92,9 +91,11 @@ function Home() {
           </div>
           <div className='w-1/2'>
             <img
-              src='/yo2.jpg'
+              src='/yo2.webp'
               alt='imagen'
-              className='w-56 h-54 mx-auto rounded-full border-4 border-blue-900/50 mt-4 2xl:mt-0'
+              className='mx-auto rounded-full border-4 border-blue-900/50 mt-4 2xl:mt-0'
+              height={224}
+              width={224}
             />
           </div>
         </div>
