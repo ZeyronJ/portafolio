@@ -101,6 +101,7 @@ function Projects() {
                     href={project.github}
                     target='_blank'
                     rel='noopener noreferrer'
+                    title='Código fuente del proyecto'
                   >
                     Código
                   </a>
@@ -110,16 +111,18 @@ function Projects() {
                       href={project.web}
                       target='_blank'
                       rel='noopener noreferrer'
+                      title='Demo del proyecto'
                     >
                       Demo
                     </a>
                   ) : (
-                    <a
+                    <button
                       className='px-4 py-2 bg-blue-900/90 border-slate-800 border rounded-lg text-slate-50 flex gap-2 mt-2 hover:bg-blue-900/60 hover:text-slate-100 cursor-pointer'
+                      title='Ver video demo'
                       onClick={() => handleToggleVideos(index)}
                     >
                       Video Demo
-                    </a>
+                    </button>
                   )}
                   {showVideos[index] && (
                     <Video

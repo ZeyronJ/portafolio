@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   ReactIcon,
   AngularIcon,
@@ -36,6 +36,23 @@ function Home() {
     { name: 'HTML', icon: <HTMLIcon /> },
     { name: 'PHP', icon: <PHPIcon /> },
   ];
+  const [copyMessage, setCopyMessage] = useState('');
+
+  const handleCopy = () => {
+    const textToCopy = 'javiermamani91@gmail.com';
+    navigator.clipboard
+      .writeText(textToCopy)
+      .then(() => {
+        setCopyMessage('¡Correo copiado!');
+        setTimeout(() => {
+          setCopyMessage('');
+        }, 2000);
+      })
+      .catch((error) => {
+        console.error('Error al copiar el texto: ', error);
+      });
+  };
+
   return (
     <div className='text-slate-200 mt-12 xl:mt-0' id='inicio'>
       <div className='flex flex-col justify-center items-center min-h-screen font-medium'>
@@ -50,6 +67,8 @@ function Home() {
                 href='https://www.linkedin.com/in/javier-mamani-lovera/'
                 target='_blank'
                 rel='noopener noreferrer'
+                aria-label='Perfil de LinkedIn'
+                title='Perfil de LinkedIn'
               >
                 <IconLinkedin className='h-6 w-6 hover:text-slate-50' />
               </a>
@@ -57,19 +76,25 @@ function Home() {
                 href='https://github.com/ZeyronJ'
                 target='_blank'
                 rel='noopener noreferrer'
+                aria-label='Perfil de GitHub'
+                title='Perfil de GitHub'
               >
                 <IconGithub className='h-6 w-6 hover:text-slate-50' />
               </a>
-              <a
-                href='https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=javiermamani91@gmail.com&su=Contacto+Portafolio&body='
-                target='_blank'
-                rel='noopener noreferrer'
+              <button
+                onClick={handleCopy}
+                aria-label='Copiar correo'
+                title='Copiar correo'
               >
                 <IconGmail className='h-6 w-6 hover:text-slate-50' />
-              </a>
+              </button>
+              {copyMessage && (
+                <div className='text-green-500'>{copyMessage}</div>
+              )}
             </div>
             <button
               className='px-4 py-2 bg-blue-900/90 border-slate-800 border rounded-lg text-slate-50 flex mt-2 hover:bg-blue-900/60 hover:text-slate-100  gap-2'
+              title='Abrir CV en PDF'
               onClick={() => window.open('/cv-javier-mamani.pdf')}
             >
               CV{' '}
@@ -91,7 +116,7 @@ function Home() {
           </div>
           <div className='w-1/2'>
             <img
-              src='/yo2.webp'
+              src='/yo.webp'
               alt='imagen'
               className='mx-auto rounded-full border-4 border-blue-900/50 mt-4 2xl:mt-0'
               height={224}

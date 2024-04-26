@@ -260,6 +260,7 @@ function Experience() {
 
                   <button
                     className='inline-flex items-center px-4 py-2 text-sm font-medium bg-blue-900/90 border border-slate-800 rounded-lg hover:bg-blue-900/60 hover:text-slate-100'
+                    title='Ver fotos demo'
                     onClick={() => handleToggleGallery(index)}
                   >
                     Fotos Demo{' '}
