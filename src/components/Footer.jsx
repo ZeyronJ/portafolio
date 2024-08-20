@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer className='text-slate-200 text-center pb-2'>
-      Made with React by{' '}
+      Hecho con React por{' '}
       <a
         className='underline underline-offset-2'
         href='https://www.linkedin.com/in/javier-mamani-lovera/'

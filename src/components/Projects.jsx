@@ -1,50 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Video from './Video';
+import MultiCarousel from './MultiCarousel';
+import { projects } from '../helpers/constants';
 
 function Projects() {
-  const projects = [
-    {
-      title: 'Debt Manager',
-      technologies: ['React Native', 'JavaScript', 'TailwindCSS', 'SQLite'],
-      description:
-        'Aplicación móvil para gestionar deudas, donde puedes agregar, editar y eliminar deudas, se pueden agregar imágenes y audios las deudas para un mayor contexto.',
-      img: '/debtmanager.webp',
-      github: 'https://github.com/ZeyronJ/debt-manager',
-      web: '',
-      video: '/debtmanager.mp4',
-    },
-    {
-      title: 'Portafolio',
-      technologies: ['React', 'TailwindCSS', 'JavaScript', 'HTML & CSS'],
-      description:
-        'Este es mi portafolio personal, donde presento mi formación académica, habilidades, experiencia y proyectos realizados. Esta diseñado para adaptarse a distintos dispositivos.',
-      img: '/portafolio.webp',
-      github: 'https://github.com/ZeyronJ/portafolio',
-      web: '#',
-      video: '',
-    },
-    {
-      title: 'App tareas',
-      technologies: ['Angular', 'TypeScript', 'TailwindCSS', 'HTML & CSS'],
-      description:
-        'Aplicación web simple de lista de tareas, donde puedes agregar, editar, eliminar y marcar como completada cada tarea. Tiene modo oscuro y claro.',
-      img: '/todoAngular.webp',
-      web: 'https://angular-8c514.firebaseapp.com/',
-      github: 'https://github.com/ZeyronJ/todo-angular-darkmode',
-      video: '',
-    },
-    {
-      title: 'Simulador VR para el área de redes',
-      technologies: ['Unity', 'C#', 'Lentes Meta Quest'],
-      description:
-        'Usando realidad virtual se simula un entorno controlado para la enseñanza de redes de computadores, se pueden realizar pruebas de conexión, configuración de dispositivos, entre otros.',
-      img: '/redes.webp',
-      github: 'https://github.com/ZeyronJ/redes-VR',
-      web: '',
-      video: '/redes.mp4',
-    },
-  ];
-
   const [showVideos, setShowVideos] = useState([]);
 
   useEffect(() => {
@@ -74,14 +33,14 @@ function Projects() {
             return (
               <div
                 key={index}
-                className='bg-slate-800 rounded-lg overflow-hidden'
+                className='bg-slate-800 rounded-lg overflow-hidden shadow-md'
               >
                 <img className='w-full' src={project.img} alt='' />
                 <div className='p-4'>
                   <h2 className='text-white text-lg font-semibold -mt-2'>
                     {project.title}
                   </h2>
-                  <div className='flex flex-wrap gap-1 my-1'>
+                  {/* <div className='flex flex-wrap gap-1 my-1'>
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
@@ -90,14 +49,15 @@ function Projects() {
                         {tech}
                       </span>
                     ))}
-                  </div>
+                  </div> */}
+                  <MultiCarousel technologies={project.technologies} />
                   <p className='text-white h-20 2xl:h-28 text-balance'>
                     {project.description}
                   </p>
                 </div>
                 <div className='p-4 flex gap-x-2'>
                   <a
-                    className='px-4 py-2 bg-blue-900/90 border-slate-800 border rounded-lg text-slate-50 flex gap-2 mt-2 hover:bg-blue-900/60 hover:text-slate-100'
+                    className='px-4 py-2 bg-blue-800 border-slate-800 border rounded-lg text-slate-50 flex gap-2 mt-2 hover:bg-blue-900 hover:text-slate-100'
                     href={project.github}
                     target='_blank'
                     rel='noopener noreferrer'
@@ -107,7 +67,7 @@ function Projects() {
                   </a>
                   {project.web !== '' ? (
                     <a
-                      className='px-4 py-2 bg-blue-900/90 border-slate-800 border rounded-lg text-slate-50 flex gap-2 mt-2 hover:bg-blue-900/60 hover:text-slate-100 cursor-pointer'
+                      className='px-4 py-2 bg-blue-800 border-slate-800 border rounded-lg text-slate-50 flex gap-2 mt-2 hover:bg-blue-900 hover:text-slate-100 cursor-pointer'
                       href={project.web}
                       target='_blank'
                       rel='noopener noreferrer'
@@ -117,7 +77,7 @@ function Projects() {
                     </a>
                   ) : (
                     <button
-                      className='px-4 py-2 bg-blue-900/90 border-slate-800 border rounded-lg text-slate-50 flex gap-2 mt-2 hover:bg-blue-900/60 hover:text-slate-100 cursor-pointer'
+                      className='px-4 py-2 bg-blue-800 border-slate-800 border rounded-lg text-slate-50 flex gap-2 mt-2 hover:bg-blue-900 hover:text-slate-100 cursor-pointer'
                       title='Ver video demo'
                       onClick={() => handleToggleVideos(index)}
                     >

@@ -1,41 +1,8 @@
 import React, { useState } from 'react';
-import {
-  ReactIcon,
-  AngularIcon,
-  NodeIcon,
-  MySQLIcon,
-  PostgreSQLIcon,
-  ExpressIcon,
-  GitIcon,
-  JavascriptIcon,
-  LaravelIcon,
-  TailwindCSSIcon,
-  HTMLIcon,
-  CSSIcon,
-  PHPIcon,
-  ReduxIcon,
-  IconLinkedin,
-  IconGithub,
-  IconGmail,
-} from '../helpers/icons';
+import { IconLinkedin, IconGithub, IconGmail } from '../helpers/icons';
+import { technologies } from '../helpers/constants';
 
 function Home() {
-  const technologies = [
-    { name: 'React', icon: <ReactIcon /> },
-    { name: 'Angular', icon: <AngularIcon /> },
-    { name: 'Node', icon: <NodeIcon /> },
-    { name: 'Express', icon: <ExpressIcon /> },
-    { name: 'JavaScript', icon: <JavascriptIcon /> },
-    { name: 'MySQL', icon: <MySQLIcon /> },
-    { name: 'PostgreSQL', icon: <PostgreSQLIcon /> },
-    { name: 'Redux', icon: <ReduxIcon /> },
-    { name: 'Git', icon: <GitIcon /> },
-    { name: 'Laravel', icon: <LaravelIcon /> },
-    { name: 'Tailwind', icon: <TailwindCSSIcon /> },
-    { name: 'CSS', icon: <CSSIcon /> },
-    { name: 'HTML', icon: <HTMLIcon /> },
-    { name: 'PHP', icon: <PHPIcon /> },
-  ];
   const [copyMessage, setCopyMessage] = useState('');
 
   const handleCopy = () => {
@@ -93,7 +60,7 @@ function Home() {
               )}
             </div>
             <button
-              className='px-4 py-2 bg-blue-900/90 border-slate-800 border rounded-lg text-slate-50 flex mt-2 hover:bg-blue-900/60 hover:text-slate-100  gap-2'
+              className='px-4 py-2 bg-blue-800 border-slate-800 border rounded-lg text-slate-50 flex mt-2 hover:bg-blue-900 hover:text-slate-100  gap-2'
               title='Abrir CV en PDF'
               onClick={() => window.open('/cv-javier-mamani.pdf')}
             >
@@ -118,7 +85,7 @@ function Home() {
             <img
               src='/yo.webp'
               alt='imagen'
-              className='mx-auto rounded-full border-4 border-blue-900/50 mt-4 2xl:mt-0'
+              className='mx-auto rounded-full border-4 border-blue-900/10 mt-4 2xl:mt-0'
               height={224}
               width={224}
             />
