@@ -207,7 +207,7 @@ export const projects = [
       'Notifications',
     ],
     description:
-      'Aplicación móvil para gestionar mediante notificaciones tareas dependiendo la hora en que se inician estas, se puede agregar, editar, eliminar o dividir las tareas.',
+      'Aplicación móvil para gestionar mediante notificaciones tareas dependiendo de la hora en que se inician estas, se puede agregar, editar, eliminar o dividir en paginas las tareas.',
     img: '/timingTasks.webp',
     github: 'https://github.com/ZeyronJ/timing-tasks',
     web: '',
@@ -237,7 +237,7 @@ export const projects = [
     title: 'Simulador VR para el área de redes',
     technologies: ['Unity', 'C#', 'Lentes Meta Quest'],
     description:
-      'Usando realidad virtual se simula un entorno controlado para la enseñanza de redes de computadores, se pueden realizar pruebas de conexión, configuración de dispositivos, entre otros.',
+      'Usando realidad virtual se simula un entorno controlado para la enseñanza de redes computacionales, se pueden realizar pruebas de conexión, configuración de dispositivos, entre otros.',
     img: '/redes.webp',
     github: 'https://github.com/ZeyronJ/redes-VR',
     web: '',

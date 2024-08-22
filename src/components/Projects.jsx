@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Video from './Video';
-import MultiCarousel from './MultiCarousel';
+import MultiCarouselTechnologies from './MultiCarouselTechnologies';
 import { projects } from '../helpers/constants';
 
 function Projects() {
@@ -33,10 +33,10 @@ function Projects() {
             return (
               <div
                 key={index}
-                className='bg-slate-800 rounded-lg overflow-hidden shadow-md'
+                className='bg-slate-800 rounded-lg overflow-hidden shadow-lg'
               >
-                <img className='w-full' src={project.img} alt='' />
-                <div className='p-4'>
+                <img className='w-full object-cover' src={project.img} alt='' />
+                <div className='p-4 h-48 xl:h-40 2xl:h-48'>
                   <h2 className='text-white text-lg font-semibold -mt-2'>
                     {project.title}
                   </h2>
@@ -50,8 +50,10 @@ function Projects() {
                       </span>
                     ))}
                   </div> */}
-                  <MultiCarousel technologies={project.technologies} />
-                  <p className='text-white h-20 2xl:h-28 text-balance'>
+                  <MultiCarouselTechnologies
+                    technologies={project.technologies}
+                  />
+                  <p className='text-white text-pretty mt-1'>
                     {project.description}
                   </p>
                 </div>

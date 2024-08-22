@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { space } from 'postcss/lib/list';
 
 function SampleNextArrow(props) {
   const { className, style, onClick, currentSlide } = props;
@@ -35,7 +36,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-export default function MultiCarousel({ technologies }) {
+export default function MultiCarouselTechnologies({ technologies }) {
   const settings = {
     className: 'slider variable-width',
     infinite: false,
@@ -52,10 +53,21 @@ export default function MultiCarousel({ technologies }) {
         breakpoint: 1535,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: false,
           dots: false,
           arrows: false,
+          draggable: false,
+        },
+      },
+      {
+        breakpoint: 460,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false,
+          arrows: technologies.length > 4,
           draggable: false,
         },
       },
@@ -63,14 +75,16 @@ export default function MultiCarousel({ technologies }) {
   };
 
   return (
-    <div className='relative'>
+    <div className='relative -ml-1'>
       <Slider {...settings}>
         {technologies.map((tech, index) => (
           <div
             key={index}
-            className='text-xs bg-slate-700 rounded-full px-2 py-1'
+            className='pr-2' // Contenedor adicional con padding
           >
-            <span>{tech}</span>
+            <div className='text-xs bg-slate-700 rounded-full px-2 py-1'>
+              <span>{tech}</span>
+            </div>
           </div>
         ))}
       </Slider>
