@@ -34,86 +34,53 @@ export const technologies = [
 
 export const experiences = [
   {
-    dates: 'Diciembre 2022 - Marzo 2023',
-    title: 'Practica Profesional Desarrollador Full Stack',
+    dates: 'Febrero 2024 - Abril 2024',
+    title: 'Desarrollador Full Stack',
     descriptionMain:
-      'Desarrollo de un Sistema de Seguimiento de Proyectos de Obras para la Dirección de Infraestructura y Equipamiento de la Universidad de Tarapacá. Este sistema fue diseñado para abordar las necesidades específicas de la Dirección, facilitando la gestión integral de los proyectos en curso.',
+      'Desarrollo de una actualizacion integral del Sistema de Gestión de Documentos para la Facultad de Odontología de la Universidad de Chile. Esta actualización incluye una mejora significativa en el diseño de la interfaz, haciendo que las secciones sean más claras y fáciles de navegar. Además, hemos actualizado las tecnologías del sistema, migrando a Next.js y utilizando AWS para el almacenamiento seguro de archivos en la nube.',
     descriptionNeeds: (
       <>
         <p>
           <br />
-          Necesidades cubiertas por el sistema:
+          Necesidades cubiertas por la actualización:
         </p>
         <ul className='list-disc ml-4'>
-          <li>Un repositorio donde almacenar documentos de forma ordenada.</li>
           <li>
-            Establecer roles de usuario con permisos adaptados a las necesidades
-            de cada tipo de usuario.
+            Mejora en la interfaz de usuario para una navegación más intuitiva.
           </li>
           <li>
-            Seguimiento de los estados pago y boletas de un proyecto en
-            ejecución.
+            Actualización de tecnologías para mejorar la eficiencia y seguridad
+            del sistema.
           </li>
-          <li>Notificaciones de pronto vencimiento de plazos.</li>
-          <li>Seguimiento en las modificaciones de los proyectos.</li>
+          <li>
+            Migración a Next.js para mejorar el rendimiento y la velocidad de
+            carga.
+          </li>
+          <li>
+            Implementación de AWS para el almacenamiento seguro de archivos en
+            la nube.
+          </li>
         </ul>
       </>
     ),
-    img: '/utaIcon.webp',
+    img: '/uchileIcon.webp',
     technologies: [
-      'Laravel',
-      'PHP',
-      'Tailwind',
+      'Next.js',
+      'AWS',
+      'React',
+      'Node',
+      'Redux',
       'JavaScript',
-      'MySQL',
+      'PostgreSQL',
       'Git',
       'HTML & CSS',
     ],
-    images: [
-      {
-        original: '/experiences/obras1.webp',
-        thumbnail: '/experiences/obras1.webp',
-      },
-      {
-        original: '/experiences/obras2.webp',
-        thumbnail: '/experiences/obras2.webp',
-      },
-      {
-        original: '/experiences/obras3.webp',
-        thumbnail: '/experiences/obras3.webp',
-      },
-      {
-        original: '/experiences/obras4.webp',
-        thumbnail: '/experiences/obras4.webp',
-      },
-      {
-        original: '/experiences/obras5.webp',
-        thumbnail: '/experiences/obras5.webp',
-      },
-      {
-        original: '/experiences/obras6.webp',
-        thumbnail: '/experiences/obras6.webp',
-      },
-      {
-        original: '/experiences/obras7.webp',
-        thumbnail: '/experiences/obras7.webp',
-      },
-      {
-        original: '/experiences/obras8.webp',
-        thumbnail: '/experiences/obras8.webp',
-      },
-      {
-        original: '/experiences/obras9.webp',
-        thumbnail: '/experiences/obras9.webp',
-      },
-      {
-        original: '/experiences/obras10.webp',
-        thumbnail: '/experiences/obras10.webp',
-      },
-    ],
+    images: [],
+    web: 'https://docs-manager-seven.vercel.app/',
   },
   {
-    dates: 'Agosto 2022 - Noviembre 2022',
+    dates: 'Noviembre 2023 - Enero 2024',
+    // dates: 'Agosto 2022 - Noviembre 2022',
     title: 'Practica Profesional Desarrollador Full Stack',
     descriptionMain:
       'Desarrollo de un Sistema de Gestión de Documentos para la Facultad de Odontología de la Universidad de Chile, destinado a abordar los desafíos asociados con la administración de archivos en papel y digitales mal ordenados, con el objetivo de apoyar la política cero papel.',
@@ -193,6 +160,166 @@ export const experiences = [
         thumbnail: '/experiences/documentos10.webp',
       },
     ],
+    web: '',
+  },
+  {
+    dates: 'Diciembre 2022 - Marzo 2023',
+    title: 'Practica Profesional Desarrollador Full Stack',
+    descriptionMain:
+      'Desarrollo de un Sistema de Seguimiento de Proyectos de Obras para la Dirección de Infraestructura y Equipamiento de la Universidad de Tarapacá. Este sistema fue diseñado para abordar las necesidades específicas de la Dirección, facilitando la gestión integral de los proyectos en curso.',
+    descriptionNeeds: (
+      <>
+        <p>
+          <br />
+          Necesidades cubiertas por el sistema:
+        </p>
+        <ul className='list-disc ml-4'>
+          <li>Un repositorio donde almacenar documentos de forma ordenada.</li>
+          <li>
+            Establecer roles de usuario con permisos adaptados a las necesidades
+            de cada tipo de usuario.
+          </li>
+          <li>
+            Seguimiento de los estados pago y boletas de un proyecto en
+            ejecución.
+          </li>
+          <li>Notificaciones de pronto vencimiento de plazos.</li>
+          <li>Seguimiento en las modificaciones de los proyectos.</li>
+        </ul>
+      </>
+    ),
+    img: '/utaIcon.webp',
+    technologies: [
+      'Laravel',
+      'PHP',
+      'Tailwind',
+      'JavaScript',
+      'MySQL',
+      'Git',
+      'HTML & CSS',
+    ],
+    images: [
+      {
+        original: '/experiences/obras1.webp',
+        thumbnail: '/experiences/obras1.webp',
+      },
+      {
+        original: '/experiences/obras2.webp',
+        thumbnail: '/experiences/obras2.webp',
+      },
+      {
+        original: '/experiences/obras3.webp',
+        thumbnail: '/experiences/obras3.webp',
+      },
+      {
+        original: '/experiences/obras4.webp',
+        thumbnail: '/experiences/obras4.webp',
+      },
+      {
+        original: '/experiences/obras5.webp',
+        thumbnail: '/experiences/obras5.webp',
+      },
+      {
+        original: '/experiences/obras6.webp',
+        thumbnail: '/experiences/obras6.webp',
+      },
+      {
+        original: '/experiences/obras7.webp',
+        thumbnail: '/experiences/obras7.webp',
+      },
+      {
+        original: '/experiences/obras8.webp',
+        thumbnail: '/experiences/obras8.webp',
+      },
+      {
+        original: '/experiences/obras9.webp',
+        thumbnail: '/experiences/obras9.webp',
+      },
+      {
+        original: '/experiences/obras10.webp',
+        thumbnail: '/experiences/obras10.webp',
+      },
+    ],
+    web: '',
+  },
+  {
+    dates: 'Enero 2022 - Marzo 2022',
+    title: 'Asistente en Gestión de Sistema ERP',
+    descriptionMain:
+      'Gestión y administración de un sistema ERP, junto con otros softwares para la administración de locales y bodega central de una empresa, con capacitaciones sobre el sistema y reemplazo temporal del encargado principal. También se prestaron servicios esporádicos de mantenimiento de hardware.',
+    descriptionNeeds: (
+      <>
+        <p>
+          <br />
+          Responsabilidades y actividades clave:
+        </p>
+        <ul className='list-disc ml-4'>
+          <li>
+            Capacitación y aprendizaje sobre el sistema ERP y otros softwares
+            administrativos.
+          </li>
+          <li>
+            Administración de inventarios y flujos de trabajo mediante el ERP.
+          </li>
+          <li>
+            Soporte técnico en software administrativo y mantenimiento de
+            hardware.
+          </li>
+          <li>
+            Reemplazo temporal del encargado del sistema ERP y otros softwares
+            administrativos.
+          </li>
+        </ul>
+      </>
+    ),
+    img: '/dispalIcon.webp',
+    technologies: [
+      'SiraERP',
+      'SII',
+      'Excel',
+      'cPanel',
+      'Groupwares',
+      'Hardware',
+    ],
+    images: [
+      {
+        original: '/experiences/dispal1.webp',
+        thumbnail: '/experiences/dispal1.webp',
+      },
+      {
+        original: '/experiences/dispal2.webp',
+        thumbnail: '/experiences/dispal2.webp',
+      },
+      {
+        original: '/experiences/dispal3.webp',
+        thumbnail: '/experiences/dispal3.webp',
+      },
+      {
+        original: '/experiences/dispal4.webp',
+        thumbnail: '/experiences/dispal4.webp',
+      },
+      {
+        original: '/experiences/dispal5.webp',
+        thumbnail: '/experiences/dispal5.webp',
+      },
+      {
+        original: '/experiences/dispal6.webp',
+        thumbnail: '/experiences/dispal6.webp',
+      },
+      {
+        original: '/experiences/dispal7.webp',
+        thumbnail: '/experiences/dispal7.webp',
+      },
+      {
+        original: '/experiences/dispal8.webp',
+        thumbnail: '/experiences/dispal8.webp',
+      },
+      {
+        original: '/experiences/dispal9.webp',
+        thumbnail: '/experiences/dispal9.webp',
+      },
+    ],
+    web: '',
   },
 ];
 
