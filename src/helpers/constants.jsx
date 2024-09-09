@@ -13,11 +13,12 @@ import {
   CSSIcon,
   PHPIcon,
   ReduxIcon,
+  AWSIcon,
 } from './icons';
 
 export const technologies = [
   { name: 'React', icon: <ReactIcon /> },
-  { name: 'Angular', icon: <AngularIcon /> },
+  { name: 'AWS', icon: <AWSIcon /> },
   { name: 'Node', icon: <NodeIcon /> },
   { name: 'Express', icon: <ExpressIcon /> },
   { name: 'JavaScript', icon: <JavascriptIcon /> },
