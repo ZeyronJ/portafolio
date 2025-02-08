@@ -35,10 +35,10 @@ export const technologies = [
 
 export const experiences = [
   {
-    dates: 'Febrero 2024 - Abril 2024',
+    dates: 'Febrero 2024 - Mayo 2024',
     title: 'Desarrollador Full Stack',
     descriptionMain:
-      'Desarrollo de una actualizacion integral del Sistema de Gestión de Documentos para la Facultad de Odontología de la Universidad de Chile. Esta actualización incluye una mejora significativa en el diseño de la interfaz, haciendo que las secciones sean más claras y fáciles de navegar. Además, hemos actualizado las tecnologías del sistema, migrando a Next.js y utilizando AWS para el almacenamiento seguro de archivos en la nube.',
+      'Desarrollo de una actualización integral del Sistema de Gestión de Documentos para la Facultad de Odontología de la Universidad de Chile. Esta actualización incluye una mejora significativa en el diseño de la interfaz, haciendo que las secciones sean más claras y fáciles de navegar. Además, hemos actualizado las tecnologías del sistema, migrando a Next.js y utilizando AWS para el almacenamiento seguro de archivos en la nube.',
     descriptionNeeds: (
       <>
         <p>

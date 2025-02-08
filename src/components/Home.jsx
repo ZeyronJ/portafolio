@@ -94,11 +94,11 @@ function Home() {
         <div className='w-full lg:w-3/4 p-4 max-w-[1100px]'>
           <h2 className='text-2xl font-bold mb-2'>Sobre mí</h2>
           <p>
-            Egresado de Ingeniería Civil en Computación e Informática, me
-            apasiona la creación y desarrollo de soluciones tecnológicas
-            innovadoras. Me he desempeñado en proyectos de desarrollo de
-            aplicaciones web Full Stack, utilizando principalmente frameworks
-            como React, Angular, Node, entre otros.{' '}
+            Ingeniero Civil en Computación e Informática, con más de un año de
+            experiencia. Me apasiona la creación y desarrollo de soluciones
+            tecnológicas innovadoras. Me he desempeñado principalmente en
+            proyectos de desarrollo de aplicaciones web Full Stack. También he
+            incursionado en aplicaciones móviles y de realidad virtual.{' '}
           </p>
           <div className='flex flex-col lg:flex-row mt-4'>
             <div className='mb-4 lg:mb-0 lg:mr-4'>
