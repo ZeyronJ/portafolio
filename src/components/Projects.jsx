@@ -33,7 +33,7 @@ function Projects() {
             return (
               <div
                 key={index}
-                className='bg-slate-800 rounded-lg overflow-hidden shadow-lg'
+                className='border border-slate-800 bg-slate-800/20 rounded-lg overflow-hidden shadow-xl'
               >
                 <img className='w-full object-cover' src={project.img} alt='' />
                 <div className='p-4 h-48 xl:h-40 2xl:h-48'>

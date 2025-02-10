@@ -35,142 +35,246 @@ export const technologies = [
 
 export const experiences = [
   {
-    dates: 'Febrero 2024 - Mayo 2024',
-    title: 'Desarrollador Full Stack',
+    dates: 'Gsamples Global | oct. 2024 — actualidad',
+    title: 'Desarrollador Frontend Web/Móvil',
     descriptionMain:
-      'Desarrollo de una actualización integral del Sistema de Gestión de Documentos para la Facultad de Odontología de la Universidad de Chile. Esta actualización incluye una mejora significativa en el diseño de la interfaz, haciendo que las secciones sean más claras y fáciles de navegar. Además, hemos actualizado las tecnologías del sistema, migrando a Next.js y utilizando AWS para el almacenamiento seguro de archivos en la nube.',
+      'Desarrollé herramientas innovadoras para la gestión geológica en Gsamples Global, incluyendo Gsamples Planner y Gsamples Scanner-App, optimizando la trazabilidad, análisis y eficiencia en las operaciones geológicas.',
     descriptionNeeds: (
       <>
-        <p>
+        <p className='-mt-2'>
           <br />
-          Necesidades cubiertas por la actualización:
+          Soluciones desarrolladas:
         </p>
         <ul className='list-disc ml-4'>
           <li>
-            Mejora en la interfaz de usuario para una navegación más intuitiva.
+            <strong>Gsamples Planner:</strong> Plataforma para mejorar la
+            trazabilidad de muestras en tiempo real, reduciendo tiempos en la
+            muestrera y ofreciendo análisis con gráficos y vinculación de
+            históricos para optimizar decisiones. Incluye un planificador
+            similar a Jira, manejo de roles de usuario, autenticación segura y
+            registro de logs de acciones realizadas.
           </li>
           <li>
-            Actualización de tecnologías para mejorar la eficiencia y seguridad
-            del sistema.
+            <strong>Gsamples Scanner-App:</strong> Aplicación móvil con
+            tecnología RFID para acelerar y optimizar la gestión de muestras,
+            aumentando la precisión y eficiencia en operaciones geológicas.
+            Implementé autenticación, escaneo de muestras por unidad y por grupo
+            utilizando el SDK de RFID, sincronización offline/online, y un flujo
+            de acciones estructurado para la edición y creación de nuevas
+            muestras geológicas.
+          </li>
+        </ul>
+      </>
+    ),
+    img: '/gsamplesIcon.webp',
+    technologies: [
+      'Angular',
+      'Next.js',
+      'React',
+      'Node.js',
+      'React Native',
+      'SQLite',
+      'Git',
+      'Jira',
+      'AWS',
+      'SDK RFID',
+      'Java',
+      'Android Studio',
+      'Postman',
+      'TailwindCSS',
+      'Bootstrap',
+    ],
+    images: [
+      {
+        original: '/experiences/gsamples/scanner1.webp',
+        thumbnail: '/experiences/gsamples/scanner1.webp',
+      },
+      {
+        original: '/experiences/gsamples/scanner2.webp',
+        thumbnail: '/experiences/gsamples/scanner2.webp',
+      },
+      {
+        original: '/experiences/gsamples/scanner3.webp',
+        thumbnail: '/experiences/gsamples/scanner3.webp',
+      },
+      {
+        original: '/experiences/gsamples/scanner4.webp',
+        thumbnail: '/experiences/gsamples/scanner4.webp',
+      },
+      {
+        original: '/experiences/gsamples/scanner5.webp',
+        thumbnail: '/experiences/gsamples/scanner5.webp',
+      },
+      {
+        original: '/experiences/gsamples/planner1.webp',
+        thumbnail: '/experiences/gsamples/planner1.webp',
+      },
+      {
+        original: '/experiences/gsamples/planner2.webp',
+        thumbnail: '/experiences/gsamples/planner2.webp',
+      },
+      {
+        original: '/experiences/gsamples/planner3.webp',
+        thumbnail: '/experiences/gsamples/planner3.webp',
+      },
+      {
+        original: '/experiences/gsamples/planner4.webp',
+        thumbnail: '/experiences/gsamples/planner4.webp',
+      },
+      {
+        original: '/experiences/gsamples/planner5.webp',
+        thumbnail: '/experiences/gsamples/planner5.webp',
+      },
+    ],
+    web: '',
+  },
+  {
+    dates: 'FusionCode Consultores | sept. 2024 — nov. 2024',
+    title: 'Desarrollador Web Full Stack',
+    descriptionMain:
+      'Diseñé y desarrollé la landing page oficial de FusionCode Consultores, mejorando su presencia online y optimizando la experiencia de usuario. Además, lideré y capacité a un equipo de TI, promoviendo metodologías ágiles para maximizar la productividad y el enfoque en resultados.',
+    descriptionNeeds: (
+      <>
+        <p className='-mt-2'>
+          <br />
+          Logros y contribuciones clave:
+        </p>
+        <ul className='list-disc ml-4'>
+          <li>Desarrollo de una landing page profesional.</li>
+          <li>
+            Mejora de la experiencia de usuario con un diseño moderno e
+            intuitivo.
           </li>
           <li>
-            Migración a Next.js para mejorar el rendimiento y la velocidad de
-            carga.
+            Implementación de metodologías ágiles como Scrum para la gestión de
+            proyectos.
           </li>
           <li>
-            Implementación de AWS para el almacenamiento seguro de archivos en
-            la nube.
+            Liderazgo y capacitación de un equipo de TI en el desarrollo de
+            sistemas web.
           </li>
+          <li>
+            Integración de herramientas como Jira y Postman para optimizar el
+            flujo de trabajo.
+          </li>
+        </ul>
+      </>
+    ),
+    img: '/experiences/fusioncode/logo.webp',
+    technologies: [
+      'React',
+      'Node.js',
+      'Express',
+      'Tailwind CSS',
+      'WSL',
+      'Git',
+      'Scrum',
+      'Jira',
+      'Postman',
+    ],
+    images: [],
+    web: 'https://fusioncode-seven.vercel.app/',
+  },
+  {
+    dates:
+      'Facultad de Odontología, Universidad de Chile | nov. 2023 — may. 2024',
+    title: 'Desarrollador Web Full Stack',
+    descriptionMain:
+      'Diseñé y desarrollé un Sistema de Gestión de Documentos para la Facultad de Odontología de la Universidad de Chile, optimizando la administración de archivos y alineándolo con la política de cero papel. Además, se realizó una actualización integral del sistema, mejorando la interfaz y migrando a tecnologías más modernas.',
+    descriptionNeeds: (
+      <>
+        <p className='-mt-2'>
+          <br />
+          Mejoras y funcionalidades implementadas:
+        </p>
+        <ul className='list-disc ml-4'>
+          <li>
+            Organización y almacenamiento digital de documentos con gestión de
+            permisos.
+          </li>
+          <li>
+            Implementación de roles de usuario con accesos personalizados.
+          </li>
+          <li>Creación de un sistema de validación para archivos oficiales.</li>
+          <li>
+            Integración de un sistema de notificaciones para eventos relevantes.
+          </li>
+          <li>
+            Rediseño de la interfaz para mejorar la usabilidad y experiencia del
+            usuario.
+          </li>
+          <li>
+            Migración a Next.js y optimización del rendimiento del sistema.
+          </li>
+          <li>Implementación de AWS para almacenamiento seguro en la nube.</li>
         </ul>
       </>
     ),
     img: '/uchileIcon.webp',
     technologies: [
       'Next.js',
-      'AWS',
       'React',
-      'Node',
-      'Redux',
-      'JavaScript',
-      'PostgreSQL',
-      'Git',
-      'HTML & CSS',
-    ],
-    images: [],
-    web: 'https://docs-manager-seven.vercel.app/',
-  },
-  {
-    dates: 'Noviembre 2023 - Enero 2024',
-    // dates: 'Agosto 2022 - Noviembre 2022',
-    title: 'Practica Profesional Desarrollador Full Stack',
-    descriptionMain:
-      'Desarrollo de un Sistema de Gestión de Documentos para la Facultad de Odontología de la Universidad de Chile, destinado a abordar los desafíos asociados con la administración de archivos en papel y digitales mal ordenados, con el objetivo de apoyar la política cero papel.',
-    descriptionNeeds: (
-      <>
-        <p>
-          <br />
-          Necesidades cubiertas por el sistema:
-        </p>
-        <ul className='list-disc ml-4'>
-          <li>
-            Organización y Almacenamiento Digital de Documentos (carpetas y
-            archivos con permisos de acceso y acciones).
-          </li>
-          <li>
-            Establecimiento de roles de usuario con permisos adaptados a las
-            necesidades de cada tipo de usuario.
-          </li>
-          <li>Creación de un sistema de archivos oficiales validados.</li>
-          <li>
-            Implementación de un sistema de notificaciones para informar a los
-            usuarios sobre eventos importantes, como la creación o modificación
-            de documentos.
-          </li>
-        </ul>
-      </>
-    ),
-    img: '/uchileIcon.webp',
-    technologies: [
-      'React',
-      'Node',
+      'Node.js',
       'Express',
-      'JavaScript',
+      'AWS',
+      'Redux',
+      'PostgreSQL',
       'MySQL',
+      'Tailwind CSS',
       'Git',
-      'HTML & CSS',
     ],
     images: [
       {
-        original: '/experiences/documentos1.webp',
-        thumbnail: '/experiences/documentos1.webp',
+        original: '/experiences/documentos/documentos1.webp',
+        thumbnail: '/experiences/documentos/documentos1.webp',
       },
       {
-        original: '/experiences/documentos2.webp',
-        thumbnail: '/experiences/documentos2.webp',
+        original: '/experiences/documentos/documentos2.webp',
+        thumbnail: '/experiences/documentos/documentos2.webp',
       },
       {
-        original: '/experiences/documentos3.webp',
-        thumbnail: '/experiences/documentos3.webp',
+        original: '/experiences/documentos/documentos3.webp',
+        thumbnail: '/experiences/documentos/documentos3.webp',
       },
       {
-        original: '/experiences/documentos4.webp',
-        thumbnail: '/experiences/documentos4.webp',
+        original: '/experiences/documentos/documentos4.webp',
+        thumbnail: '/experiences/documentos/documentos4.webp',
       },
       {
-        original: '/experiences/documentos5.webp',
-        thumbnail: '/experiences/documentos5.webp',
+        original: '/experiences/documentos/documentos5.webp',
+        thumbnail: '/experiences/documentos/documentos5.webp',
       },
       {
-        original: '/experiences/documentos6.webp',
-        thumbnail: '/experiences/documentos6.webp',
+        original: '/experiences/documentos/documentos6.webp',
+        thumbnail: '/experiences/documentos/documentos6.webp',
       },
       {
-        original: '/experiences/documentos7.webp',
-        thumbnail: '/experiences/documentos7.webp',
+        original: '/experiences/documentos/documentos7.webp',
+        thumbnail: '/experiences/documentos/documentos7.webp',
       },
       {
-        original: '/experiences/documentos8.webp',
-        thumbnail: '/experiences/documentos8.webp',
+        original: '/experiences/documentos/documentos8.webp',
+        thumbnail: '/experiences/documentos/documentos8.webp',
       },
       {
-        original: '/experiences/documentos9.webp',
-        thumbnail: '/experiences/documentos9.webp',
+        original: '/experiences/documentos/documentos9.webp',
+        thumbnail: '/experiences/documentos/documentos9.webp',
       },
       {
-        original: '/experiences/documentos10.webp',
-        thumbnail: '/experiences/documentos10.webp',
+        original: '/experiences/documentos/documentos10.webp',
+        thumbnail: '/experiences/documentos/documentos10.webp',
       },
     ],
-    web: '',
+    web: 'https://docs-manager-seven.vercel.app/',
   },
   {
-    dates: 'Diciembre 2022 - Marzo 2023',
-    title: 'Practica Profesional Desarrollador Full Stack',
+    dates: 'Universidad de Tarapacá | dic. 2022 — feb. 2023',
+    title: 'Practica Profesional Desarrollador Web Full Stack',
     descriptionMain:
-      'Desarrollo de un Sistema de Seguimiento de Proyectos de Obras para la Dirección de Infraestructura y Equipamiento de la Universidad de Tarapacá. Este sistema fue diseñado para abordar las necesidades específicas de la Dirección, facilitando la gestión integral de los proyectos en curso.',
+      'Desarrollé un Sistema de Seguimiento de Proyectos para la Dirección de Infraestructura, con seguimiento de pagos, notificaciones y almacenamiento de documentos.',
     descriptionNeeds: (
       <>
-        <p>
+        <p className='-mt-2'>
           <br />
           Necesidades cubiertas por el sistema:
         </p>
@@ -201,123 +305,44 @@ export const experiences = [
     ],
     images: [
       {
-        original: '/experiences/obras1.webp',
-        thumbnail: '/experiences/obras1.webp',
+        original: '/experiences/practica1/obras1.webp',
+        thumbnail: '/experiences/practica1/obras1.webp',
       },
       {
-        original: '/experiences/obras2.webp',
-        thumbnail: '/experiences/obras2.webp',
+        original: '/experiences/practica1/obras2.webp',
+        thumbnail: '/experiences/practica1/obras2.webp',
       },
       {
-        original: '/experiences/obras3.webp',
-        thumbnail: '/experiences/obras3.webp',
+        original: '/experiences/practica1/obras3.webp',
+        thumbnail: '/experiences/practica1/obras3.webp',
       },
       {
-        original: '/experiences/obras4.webp',
-        thumbnail: '/experiences/obras4.webp',
+        original: '/experiences/practica1/obras4.webp',
+        thumbnail: '/experiences/practica1/obras4.webp',
       },
       {
-        original: '/experiences/obras5.webp',
-        thumbnail: '/experiences/obras5.webp',
+        original: '/experiences/practica1/obras5.webp',
+        thumbnail: '/experiences/practica1/obras5.webp',
       },
       {
-        original: '/experiences/obras6.webp',
-        thumbnail: '/experiences/obras6.webp',
+        original: '/experiences/practica1/obras6.webp',
+        thumbnail: '/experiences/practica1/obras6.webp',
       },
       {
-        original: '/experiences/obras7.webp',
-        thumbnail: '/experiences/obras7.webp',
+        original: '/experiences/practica1/obras7.webp',
+        thumbnail: '/experiences/practica1/obras7.webp',
       },
       {
-        original: '/experiences/obras8.webp',
-        thumbnail: '/experiences/obras8.webp',
+        original: '/experiences/practica1/obras8.webp',
+        thumbnail: '/experiences/practica1/obras8.webp',
       },
       {
-        original: '/experiences/obras9.webp',
-        thumbnail: '/experiences/obras9.webp',
+        original: '/experiences/practica1/obras9.webp',
+        thumbnail: '/experiences/practica1/obras9.webp',
       },
       {
-        original: '/experiences/obras10.webp',
-        thumbnail: '/experiences/obras10.webp',
-      },
-    ],
-    web: '',
-  },
-  {
-    dates: 'Enero 2022 - Marzo 2022',
-    title: 'Asistente en Gestión de Sistema ERP',
-    descriptionMain:
-      'Gestión y administración de un sistema ERP, junto con otros softwares para la administración de locales y bodega central de una empresa, con capacitaciones sobre el sistema y reemplazo temporal del encargado principal. También se prestaron servicios esporádicos de mantenimiento de hardware.',
-    descriptionNeeds: (
-      <>
-        <p>
-          <br />
-          Responsabilidades y actividades clave:
-        </p>
-        <ul className='list-disc ml-4'>
-          <li>
-            Capacitación y aprendizaje sobre el sistema ERP y otros softwares
-            administrativos.
-          </li>
-          <li>
-            Administración de inventarios y flujos de trabajo mediante el ERP.
-          </li>
-          <li>
-            Soporte técnico en software administrativo y mantenimiento de
-            hardware.
-          </li>
-          <li>
-            Reemplazo temporal del encargado del sistema ERP y otros softwares
-            administrativos.
-          </li>
-        </ul>
-      </>
-    ),
-    img: '/dispalIcon.webp',
-    technologies: [
-      'SiraERP',
-      'SII',
-      'Excel',
-      'cPanel',
-      'Groupwares',
-      'Hardware',
-    ],
-    images: [
-      {
-        original: '/experiences/dispal1.webp',
-        thumbnail: '/experiences/dispal1.webp',
-      },
-      {
-        original: '/experiences/dispal2.webp',
-        thumbnail: '/experiences/dispal2.webp',
-      },
-      {
-        original: '/experiences/dispal3.webp',
-        thumbnail: '/experiences/dispal3.webp',
-      },
-      {
-        original: '/experiences/dispal4.webp',
-        thumbnail: '/experiences/dispal4.webp',
-      },
-      {
-        original: '/experiences/dispal5.webp',
-        thumbnail: '/experiences/dispal5.webp',
-      },
-      {
-        original: '/experiences/dispal6.webp',
-        thumbnail: '/experiences/dispal6.webp',
-      },
-      {
-        original: '/experiences/dispal7.webp',
-        thumbnail: '/experiences/dispal7.webp',
-      },
-      {
-        original: '/experiences/dispal8.webp',
-        thumbnail: '/experiences/dispal8.webp',
-      },
-      {
-        original: '/experiences/dispal9.webp',
-        thumbnail: '/experiences/dispal9.webp',
+        original: '/experiences/practica1/obras10.webp',
+        thumbnail: '/experiences/practica1/obras10.webp',
       },
     ],
     web: '',

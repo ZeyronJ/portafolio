@@ -92,55 +92,58 @@ function Experience() {
                       </div>
                     ))}
                   </div>
-                  {experience.web !== '' ? (
-                    <a
-                      className='inline-flex items-center px-4 py-2 text-sm font-medium bg-blue-800 border border-slate-800 rounded-lg hover:bg-blue-900 hover:text-slate-100'
-                      href={experience.web}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      title='Demo del proyecto'
-                    >
-                      Demo{' '}
-                      <svg
-                        className='w-3 h-3 ms-2 rtl:rotate-180'
-                        aria-hidden='true'
-                        xmlns='http://www.w3.org/2000/svg'
-                        fill='none'
-                        viewBox='0 0 14 10'
+                  <div className='flex flex-wrap lg:w-1/5 w-full gap-2 mt-2 lg:mt-0'>
+                    {experience.web !== '' && (
+                      <a
+                        className='inline-flex items-center px-4 py-2 text-sm font-medium bg-blue-800 border border-slate-800 rounded-lg hover:bg-blue-900 hover:text-slate-100'
+                        href={experience.web}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        title='Demo del proyecto'
                       >
-                        <path
-                          stroke='currentColor'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth='2'
-                          d='M1 5h12m0 0L9 1m4 4L9 9'
-                        />
-                      </svg>
-                    </a>
-                  ) : (
-                    <button
-                      className='inline-flex items-center px-4 py-2 text-sm font-medium bg-blue-800 border border-slate-800 rounded-lg hover:bg-blue-900 hover:text-slate-100'
-                      title='Ver fotos demo'
-                      onClick={() => handleToggleGallery(index)}
-                    >
-                      Fotos Demo{' '}
-                      <svg
-                        className='w-3 h-3 ms-2 rtl:rotate-180'
-                        aria-hidden='true'
-                        xmlns='http://www.w3.org/2000/svg'
-                        fill='none'
-                        viewBox='0 0 14 10'
+                        Demo{' '}
+                        <svg
+                          className='w-3 h-3 ms-2 rtl:rotate-180'
+                          aria-hidden='true'
+                          xmlns='http://www.w3.org/2000/svg'
+                          fill='none'
+                          viewBox='0 0 14 10'
+                        >
+                          <path
+                            stroke='currentColor'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth='2'
+                            d='M1 5h12m0 0L9 1m4 4L9 9'
+                          />
+                        </svg>
+                      </a>
+                    )}
+                    {experience.images.length > 0 && (
+                      <button
+                        className='inline-flex items-center px-4 py-2 text-sm font-medium bg-blue-800 border border-slate-800 rounded-lg hover:bg-blue-900 hover:text-slate-100'
+                        title='Ver fotos demo'
+                        onClick={() => handleToggleGallery(index)}
                       >
-                        <path
-                          stroke='currentColor'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth='2'
-                          d='M1 5h12m0 0L9 1m4 4L9 9'
-                        />
-                      </svg>
-                    </button>
-                  )}
+                        Fotos Demo{' '}
+                        <svg
+                          className='w-3 h-3 ms-2 rtl:rotate-180'
+                          aria-hidden='true'
+                          xmlns='http://www.w3.org/2000/svg'
+                          fill='none'
+                          viewBox='0 0 14 10'
+                        >
+                          <path
+                            stroke='currentColor'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth='2'
+                            d='M1 5h12m0 0L9 1m4 4L9 9'
+                          />
+                        </svg>
+                      </button>
+                    )}
+                  </div>
 
                   {showGallery[index] && (
                     <Gallery
