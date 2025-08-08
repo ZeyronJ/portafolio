@@ -94,10 +94,10 @@ function Home() {
         <div className='w-full lg:w-3/4 p-4 max-w-[1100px]'>
           <h2 className='text-2xl font-bold mb-2'>Sobre mí</h2>
           <p>
-            Ingeniero Civil en Computación e Informática con más de un año de
+            Ingeniero Civil en Computación e Informática con más de dos años de
             experiencia profesional. Especializado en el desarrollo de
-            aplicaciones web Full Stack y móviles, enfocado en crear soluciones
-            eficientes y escalables.
+            aplicaciones web Full Stack e inteligencia artificial, enfocado en
+            crear soluciones eficientes y escalables.
           </p>
           <div className='flex flex-col lg:flex-row mt-4'>
             <div className='mb-4 lg:mb-0 lg:mr-4'>

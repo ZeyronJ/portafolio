@@ -17,15 +17,15 @@ function Nav() {
     <div className='w-full border-b border-b-slate-950 fixed bg-slate-950/50 backdrop-filter backdrop-blur-sm z-10 shadow-md'>
       <div className='flex w-full lg:w-3/4 mx-auto justify-center lg:justify-end py-4 max-w-[1100px]'>
         <ul className='flex text-slate-200'>
-          <li className='mr-4 font-medium'>
+          <li className='mr-4 font-medium hover:text-white'>
             <button onClick={() => handleMenuClick('inicio')}>Inicio</button>
           </li>
-          <li className='mr-4 font-medium'>
+          <li className='mr-4 font-medium hover:text-white'>
             <button onClick={() => handleMenuClick('experience')}>
               Experiencia
             </button>
           </li>
-          <li className='font-medium'>
+          <li className='font-medium hover:text-white'>
             <button onClick={() => handleMenuClick('projects')}>
               Proyectos
             </button>

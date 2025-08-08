@@ -7,36 +7,141 @@ import {
   ExpressIcon,
   GitIcon,
   JavascriptIcon,
-  LaravelIcon,
   TailwindCSSIcon,
   HTMLIcon,
   CSSIcon,
-  PHPIcon,
   ReduxIcon,
   AWSIcon,
+  NextJSIcon,
+  DockerIcon,
+  N8NIcon,
 } from './icons';
 
 export const technologies = [
-  { name: 'React', icon: <ReactIcon /> },
-  { name: 'AWS', icon: <AWSIcon /> },
-  { name: 'Node', icon: <NodeIcon /> },
-  { name: 'Express', icon: <ExpressIcon /> },
-  { name: 'JavaScript', icon: <JavascriptIcon /> },
-  { name: 'MySQL', icon: <MySQLIcon /> },
-  { name: 'PostgreSQL', icon: <PostgreSQLIcon /> },
-  { name: 'Redux', icon: <ReduxIcon /> },
-  { name: 'Git', icon: <GitIcon /> },
-  { name: 'Laravel', icon: <LaravelIcon /> },
-  { name: 'Tailwind', icon: <TailwindCSSIcon /> },
-  { name: 'CSS', icon: <CSSIcon /> },
-  { name: 'HTML', icon: <HTMLIcon /> },
-  { name: 'PHP', icon: <PHPIcon /> },
+  { name: 'React', icon: <ReactIcon className='w-10 h-10 text-cyan-400' /> },
+  { name: 'AWS', icon: <AWSIcon className='w-10 h-10' /> },
+  { name: 'Node.js', icon: <NodeIcon className='w-10 h-10' /> },
+  { name: 'Express', icon: <ExpressIcon className='w-10 h-10' /> },
+  { name: 'JavaScript', icon: <JavascriptIcon className='w-10 h-10' /> },
+  { name: 'MySQL', icon: <MySQLIcon className='w-10 h-10 text-cyan-600' /> },
+  {
+    name: 'PostgreSQL',
+    icon: <PostgreSQLIcon className='w-10 h-10' />,
+  },
+  { name: 'n8n', icon: <N8NIcon className='w-10 h-10 text-transparent' /> },
+  { name: 'Git', icon: <GitIcon className='w-10 h-10 text-orange-600' /> },
+  { name: 'Next.js', icon: <NextJSIcon className='w-10 h-10' /> },
+  { name: 'TailwindCSS', icon: <TailwindCSSIcon className='w-10 h-10' /> },
+  { name: 'CSS', icon: <CSSIcon className='w-10 h-10' /> },
+  { name: 'HTML', icon: <HTMLIcon className='w-10 h-10' /> },
+  {
+    name: 'Docker',
+    icon: (
+      <DockerIcon className='fill-white size-10 bg-[#0091e2] rounded-full' />
+    ),
+  },
 ];
 
 export const experiences = [
   {
-    dates: 'Gsamples Global | oct. 2024 — actualidad',
-    title: 'Desarrollador Frontend Web/Móvil',
+    dates: 'Freelance | feb. 2025 - actualidad',
+    title: 'Desarrollador Full Stack IA',
+    descriptionMain:
+      'Desarrolle soluciones de Inteligencia Artificial sumado a interfaces y backend para automatizar procesos empresariales, especializándome en OCR, procesamiento de documentos y sistemas de matching inteligente. Implemento tecnologías cutting-edge como LLMs y flujos de trabajo automatizados para optimizar la eficiencia operativa y reducir errores manuales.',
+    descriptionNeeds: (
+      <>
+        <p className='-mt-2'>
+          <br />
+          Soluciones desarrolladas:
+        </p>
+        <ul className='list-disc ml-4'>
+          <li>
+            <strong>Plataforma de Automatización de Facturas: </strong>
+            Desarrollé una plataforma web completa para la gestión y validación
+            automática de albaranes y facturas utilizando IA y OCR. Implementé
+            funcionalidades de validación cruzada de documentos, seguimiento en
+            tiempo real, y un chat inteligente integrado. La solución redujo
+            significativamente los errores manuales y optimizó los tiempos de
+            procesamiento documental, mejorando la eficiencia operativa y la
+            seguridad en el manejo de información.
+          </li>
+          <li>
+            <strong>
+              Sistema de Matching Inteligente para Reclutamiento:{' '}
+            </strong>
+            Creé una plataforma web para automatizar el ciclo de reclutamiento
+            completo mediante IA y flujos automatizados con n8n. Desarrollé
+            sistema de OCR para subida masiva de CVs, algoritmo de matching
+            basado en LLMs para clasificación automática de candidatos, y chat
+            inteligente para comunicación optimizada. La solución escalable
+            reduce tiempos de filtrado y permite decisiones de contratación
+            basadas en criterios personalizables.
+          </li>
+        </ul>
+      </>
+    ),
+    img: '/favicon.ico',
+    technologies: [
+      'Next.js',
+      'React',
+      'Node.js',
+      'Express',
+      'n8n',
+      'OpenAI API',
+      'Gemini API',
+      'OCR',
+      'Docker',
+      'PostgreSQL',
+      'TailwindCSS',
+      'TypeScript',
+    ],
+    images: [
+      {
+        original: '/experiences/freelance/f1.webp',
+        thumbnail: '/experiences/freelance/f1.webp',
+      },
+      {
+        original: '/experiences/freelance/f2.webp',
+        thumbnail: '/experiences/freelance/f2.webp',
+      },
+      {
+        original: '/experiences/freelance/f3.webp',
+        thumbnail: '/experiences/freelance/f3.webp',
+      },
+      {
+        original: '/experiences/freelance/f4.webp',
+        thumbnail: '/experiences/freelance/f4.webp',
+      },
+      {
+        original: '/experiences/freelance/f5.webp',
+        thumbnail: '/experiences/freelance/f5.webp',
+      },
+      {
+        original: '/experiences/freelance/f6.webp',
+        thumbnail: '/experiences/freelance/f6.webp',
+      },
+      {
+        original: '/experiences/freelance/f7.webp',
+        thumbnail: '/experiences/freelance/f7.webp',
+      },
+      {
+        original: '/experiences/freelance/f8.webp',
+        thumbnail: '/experiences/freelance/f8.webp',
+      },
+      {
+        original: '/experiences/freelance/f9.webp',
+        thumbnail: '/experiences/freelance/f9.webp',
+      },
+      {
+        original: '/experiences/freelance/f10.webp',
+        thumbnail: '/experiences/freelance/f10.webp',
+      },
+    ],
+    web: '',
+  },
+  {
+    dates: 'Gsamples Global | oct. 2024 - ago. 2025',
+    title: 'Desarrollador Full Stack Web/Móvil',
     descriptionMain:
       'Desarrollé herramientas innovadoras para la gestión geológica en Gsamples Global, incluyendo Gsamples Planner y Gsamples Scanner-App, optimizando la trazabilidad, análisis y eficiencia en las operaciones geológicas.',
     descriptionNeeds: (
@@ -74,15 +179,15 @@ export const experiences = [
       'Node.js',
       'React Native',
       'SQLite',
-      'Git',
       'Jira',
       'AWS',
       'SDK RFID',
-      'Java',
+      'Eleven Labs',
       'Android Studio',
       'Postman',
+      'Docker',
       'TailwindCSS',
-      'Bootstrap',
+      'NestJS',
     ],
     images: [
       {
@@ -129,7 +234,7 @@ export const experiences = [
     web: '',
   },
   {
-    dates: 'FusionCode Consultores | sept. 2024 — nov. 2024',
+    dates: 'FusionCode Consultores | sept. 2024 - nov. 2024',
     title: 'Desarrollador Web Full Stack',
     descriptionMain:
       'Diseñé y desarrollé la landing page oficial de FusionCode Consultores, mejorando su presencia online y optimizando la experiencia de usuario. Además, lideré y capacité a un equipo de TI, promoviendo metodologías ágiles para maximizar la productividad y el enfoque en resultados.',
@@ -165,9 +270,8 @@ export const experiences = [
       'React',
       'Node.js',
       'Express',
-      'Tailwind CSS',
+      'TailwindCSS',
       'WSL',
-      'Git',
       'Scrum',
       'Jira',
       'Postman',
@@ -177,7 +281,7 @@ export const experiences = [
   },
   {
     dates:
-      'Facultad de Odontología, Universidad de Chile | nov. 2023 — may. 2024',
+      'Facultad de Odontología, Universidad de Chile | nov. 2023 - may. 2024',
     title: 'Desarrollador Web Full Stack',
     descriptionMain:
       'Diseñé y desarrollé un Sistema de Gestión de Documentos para la Facultad de Odontología de la Universidad de Chile, optimizando la administración de archivos y alineándolo con la política de cero papel. Además, se realizó una actualización integral del sistema, mejorando la interfaz y migrando a tecnologías más modernas.',
@@ -220,8 +324,7 @@ export const experiences = [
       'Redux',
       'PostgreSQL',
       'MySQL',
-      'Tailwind CSS',
-      'Git',
+      'TailwindCSS',
     ],
     images: [
       {
@@ -268,7 +371,7 @@ export const experiences = [
     web: 'https://docs-manager-seven.vercel.app/',
   },
   {
-    dates: 'Universidad de Tarapacá | dic. 2022 — feb. 2023',
+    dates: 'Universidad de Tarapacá | dic. 2022 - feb. 2023',
     title: 'Practica Profesional Desarrollador Web Full Stack',
     descriptionMain:
       'Desarrollé un Sistema de Seguimiento de Proyectos para la Dirección de Infraestructura, con seguimiento de pagos, notificaciones y almacenamiento de documentos.',
@@ -294,15 +397,7 @@ export const experiences = [
       </>
     ),
     img: '/utaIcon.webp',
-    technologies: [
-      'Laravel',
-      'PHP',
-      'Tailwind',
-      'JavaScript',
-      'MySQL',
-      'Git',
-      'HTML & CSS',
-    ],
+    technologies: ['Laravel', 'PHP', 'TailwindCSS', 'JavaScript', 'MySQL'],
     images: [
       {
         original: '/experiences/practica1/obras1.webp',
@@ -378,7 +473,7 @@ export const projects = [
   },
   {
     title: 'Portafolio',
-    technologies: ['React', 'TailwindCSS', 'JavaScript', 'HTML & CSS'],
+    technologies: ['React', 'TailwindCSS', 'JavaScript'],
     description:
       'Este es mi portafolio personal, donde presento mi formación académica, habilidades, experiencia y proyectos realizados. Esta diseñado para adaptarse a distintos dispositivos.',
     img: '/portafolio.webp',
@@ -395,21 +490,5 @@ export const projects = [
     github: 'https://github.com/ZeyronJ/redes-VR',
     web: '',
     video: '/redes.mp4',
-  },
-  {
-    title: 'App tareas',
-    technologies: [
-      'Angular',
-      'TypeScript',
-      'TailwindCSS',
-      'HTML & CSS',
-      'Firebase',
-    ],
-    description:
-      'Aplicación web simple de lista de tareas, donde puedes agregar, editar, eliminar y marcar como completada cada tarea. Tiene modo oscuro y claro.',
-    img: '/todoAngular.webp',
-    web: 'https://angular-8c514.firebaseapp.com/',
-    github: 'https://github.com/ZeyronJ/todo-angular-darkmode',
-    video: '',
   },
 ];
