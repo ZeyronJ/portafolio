@@ -1,6 +1,5 @@
 import {
   ReactIcon,
-  AngularIcon,
   NodeIcon,
   MySQLIcon,
   PostgreSQLIcon,
@@ -10,7 +9,6 @@ import {
   TailwindCSSIcon,
   HTMLIcon,
   CSSIcon,
-  ReduxIcon,
   AWSIcon,
   NextJSIcon,
   DockerIcon,
@@ -47,7 +45,7 @@ export const experiences = [
     dates: 'Freelance | feb. 2025 - actualidad',
     title: 'Desarrollador Full Stack IA',
     descriptionMain:
-      'Desarrolle soluciones de Inteligencia Artificial sumado a interfaces y backend para automatizar procesos empresariales, especializándome en OCR, procesamiento de documentos y sistemas de matching inteligente. Implemento tecnologías cutting-edge como LLMs y flujos de trabajo automatizados para optimizar la eficiencia operativa y reducir errores manuales.',
+      'Desarrollo aplicaciones full stack de Inteligencia Artificial especializándome en OCR avanzado, procesamiento inteligente de documentos y sistemas de matching basados en IA. Implemento tecnologías como LLMs, APIs de OpenAI/Gemini y automatización con n8n para maximizar la eficiencia operativa y eliminar errores manuales.',
     descriptionNeeds: (
       <>
         <p className='-mt-2'>
@@ -326,48 +324,7 @@ export const experiences = [
       'MySQL',
       'TailwindCSS',
     ],
-    images: [
-      {
-        original: '/experiences/documentos/documentos1.webp',
-        thumbnail: '/experiences/documentos/documentos1.webp',
-      },
-      {
-        original: '/experiences/documentos/documentos2.webp',
-        thumbnail: '/experiences/documentos/documentos2.webp',
-      },
-      {
-        original: '/experiences/documentos/documentos3.webp',
-        thumbnail: '/experiences/documentos/documentos3.webp',
-      },
-      {
-        original: '/experiences/documentos/documentos4.webp',
-        thumbnail: '/experiences/documentos/documentos4.webp',
-      },
-      {
-        original: '/experiences/documentos/documentos5.webp',
-        thumbnail: '/experiences/documentos/documentos5.webp',
-      },
-      {
-        original: '/experiences/documentos/documentos6.webp',
-        thumbnail: '/experiences/documentos/documentos6.webp',
-      },
-      {
-        original: '/experiences/documentos/documentos7.webp',
-        thumbnail: '/experiences/documentos/documentos7.webp',
-      },
-      {
-        original: '/experiences/documentos/documentos8.webp',
-        thumbnail: '/experiences/documentos/documentos8.webp',
-      },
-      {
-        original: '/experiences/documentos/documentos9.webp',
-        thumbnail: '/experiences/documentos/documentos9.webp',
-      },
-      {
-        original: '/experiences/documentos/documentos10.webp',
-        thumbnail: '/experiences/documentos/documentos10.webp',
-      },
-    ],
+    images: [],
     web: 'https://docs-manager-seven.vercel.app/',
   },
   {

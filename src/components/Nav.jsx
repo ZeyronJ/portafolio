@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Nav() {
   const handleMenuClick = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -14,9 +12,9 @@ function Nav() {
   };
 
   return (
-    <div className='w-full border-b border-b-slate-950 fixed bg-slate-950/50 backdrop-filter backdrop-blur-sm z-10 shadow-md'>
+    <div className='w-full border-b border-b-slate-950 fixed bg-slate-950/50 backdrop-filter backdrop-blur-sm z-30 shadow-md'>
       <div className='flex w-full lg:w-3/4 mx-auto justify-center lg:justify-end py-4 max-w-[1100px]'>
-        <ul className='flex text-slate-200'>
+        <ul className='flex text-slate-100'>
           <li className='mr-4 font-medium hover:text-white'>
             <button onClick={() => handleMenuClick('inicio')}>Inicio</button>
           </li>

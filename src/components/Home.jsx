@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { IconLinkedin, IconGithub, IconGmail } from '../helpers/icons';
 import { technologies } from '../helpers/constants';
 
@@ -21,7 +21,7 @@ function Home() {
   };
 
   return (
-    <div className='text-slate-200 mt-12 xl:mt-0' id='inicio'>
+    <div className='text-slate-100 mt-12 xl:mt-0' id='inicio'>
       <div className='flex flex-col justify-center items-center min-h-screen font-medium'>
         <div className='w-full lg:w-3/4 p-4 mb-10 flex flex-col-reverse lg:flex-row lg:justify-between max-w-[1100px] items-center'>
           <div className='mb-4 lg:mb-0 items-center flex flex-col lg:block'>
@@ -60,7 +60,7 @@ function Home() {
               )}
             </div>
             <button
-              className='px-4 py-2 bg-blue-800 border-slate-800 border rounded-lg text-slate-50 flex mt-2 hover:bg-blue-900 hover:text-slate-100  gap-2'
+              className='px-4 py-2 bg-neutral-100 border-slate-600 border text-neutral-950 hover:bg-neutral-200 rounded-lg  flex mt-3 gap-2'
               title='Abrir CV en PDF'
               onClick={() => window.open('/cv-javier-mamani.pdf')}
             >
@@ -88,6 +88,7 @@ function Home() {
               className='mx-auto rounded-full border-4 border-blue-900/10 mt-4 2xl:mt-0'
               height={224}
               width={224}
+              loading='lazy'
             />
           </div>
         </div>
@@ -107,8 +108,30 @@ function Home() {
                   Ingeniería Civil en Computación e Informática, Ingeniería de
                   Software.
                 </li>
-                <li className='italic text-slate-400'>
+                <li className='italic text-slate-400 flex items-center gap-1'>
                   Universidad de Tarapacá | mar. 2018 - feb. 2024
+                  <a
+                    href='https://sisaca.uta.cl/wwwregistraduria/public/validador/validar/index/d/eyJmb2xpbyI6MjAyNDAwMTg2MDEyOTEsICJ0aXBvIjoxLCAic3BhSWQiOjAgLCAiY29ycmVsIjowfQ=='
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    title='Verificar'
+                    className='hover:text-slate-200 transition-colors'
+                  >
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      strokeWidth='1.5'
+                      stroke='currentColor'
+                      className='size-5'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M13.5 6H7A2 2 0 0 0 5 8v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6.5M12 12L21 3m0 0h-4M21 3v4'
+                      />
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Video from './Video';
 import MultiCarouselTechnologies from './MultiCarouselTechnologies';
 import { projects } from '../helpers/constants';
@@ -23,7 +23,7 @@ function Projects() {
   };
   return (
     <div
-      className='flex justify-center items-center mt-20 text-slate-200'
+      className='flex justify-center items-center mt-20 text-slate-100'
       id='projects'
     >
       <div className='lg:w-3/4 w-full p-4 mb-10 max-w-[1100px]'>
@@ -33,23 +33,13 @@ function Projects() {
             return (
               <div
                 key={index}
-                className='border border-slate-800 bg-slate-800/20 rounded-lg overflow-hidden shadow-xl'
+                className='border border-slate-800 rounded-lg overflow-hidden shadow-xl'
               >
                 <img className='w-full object-cover' src={project.img} alt='' />
                 <div className='p-4 h-48 xl:h-40 2xl:h-48'>
                   <h2 className='text-white text-lg font-semibold -mt-2'>
                     {project.title}
                   </h2>
-                  {/* <div className='flex flex-wrap gap-1 my-1'>
-                    {project.technologies.map((tech, index) => (
-                      <span
-                        key={index}
-                        className='text-xs bg-slate-700 rounded-full px-2 py-1'
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div> */}
                   <MultiCarouselTechnologies
                     technologies={project.technologies}
                   />
@@ -59,7 +49,7 @@ function Projects() {
                 </div>
                 <div className='p-4 flex gap-x-2'>
                   <a
-                    className='px-4 py-2 bg-blue-800 border-slate-800 border rounded-lg text-slate-50 flex gap-2 mt-2 hover:bg-blue-900 hover:text-slate-100'
+                    className='px-4 py-2 bg-neutral-100 border-slate-800 border rounded-lg text-neutral-950 flex gap-2 mt-2 hover:bg-neutral-200'
                     href={project.github}
                     target='_blank'
                     rel='noopener noreferrer'
@@ -69,7 +59,7 @@ function Projects() {
                   </a>
                   {project.web !== '' ? (
                     <a
-                      className='px-4 py-2 bg-blue-800 border-slate-800 border rounded-lg text-slate-50 flex gap-2 mt-2 hover:bg-blue-900 hover:text-slate-100 cursor-pointer'
+                      className='px-4 py-2 bg-neutral-100 border-slate-800 border rounded-lg text-neutral-950 flex gap-2 mt-2 hover:bg-neutral-200'
                       href={project.web}
                       target='_blank'
                       rel='noopener noreferrer'
@@ -79,7 +69,7 @@ function Projects() {
                     </a>
                   ) : (
                     <button
-                      className='px-4 py-2 bg-blue-800 border-slate-800 border rounded-lg text-slate-50 flex gap-2 mt-2 hover:bg-blue-900 hover:text-slate-100 cursor-pointer'
+                      className='px-4 py-2 bg-neutral-100 border-slate-800 border rounded-lg text-neutral-950 flex gap-2 mt-2 hover:bg-neutral-200'
                       title='Ver video demo'
                       onClick={() => handleToggleVideos(index)}
                     >

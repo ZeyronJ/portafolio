@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Gallery from './Gallery';
 import { experiences } from '../helpers/constants';
 
@@ -33,7 +33,7 @@ function Experience() {
 
   return (
     <div
-      className='relative flex flex-col justify-center items-center mt-10 font-medium text-slate-200 '
+      className='relative flex flex-col justify-center items-center mt-10 font-medium text-slate-100'
       id='experience'
     >
       <div className='w-full lg:w-3/4 p-4 max-w-[1100px]'>
@@ -95,7 +95,7 @@ function Experience() {
                   <div className='flex flex-wrap lg:w-1/5 w-full gap-2 mt-2 lg:mt-0'>
                     {experience.web !== '' && (
                       <a
-                        className='inline-flex items-center px-4 py-2 text-sm font-medium bg-blue-800 border border-slate-800 rounded-lg hover:bg-blue-900 hover:text-slate-100'
+                        className='inline-flex items-center px-4 py-2 text-sm font-medium bg-neutral-100 border-slate-600 border text-neutral-950 hover:bg-neutral-200 rounded-lg'
                         href={experience.web}
                         target='_blank'
                         rel='noopener noreferrer'
@@ -121,7 +121,7 @@ function Experience() {
                     )}
                     {experience.images.length > 0 && (
                       <button
-                        className='inline-flex items-center px-4 py-2 text-sm font-medium bg-blue-800 border border-slate-800 rounded-lg hover:bg-blue-900 hover:text-slate-100'
+                        className='inline-flex items-center px-4 py-2 text-sm font-medium bg-neutral-100 border-slate-600 border text-neutral-950 hover:bg-neutral-200 rounded-lg'
                         title='Ver fotos demo'
                         onClick={() => handleToggleGallery(index)}
                       >
