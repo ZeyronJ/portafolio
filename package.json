@@ -10,8 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "ogl": "^1.0.11",
-    "pixel-canvas": "github:hexagoncircle/pixel-canvas",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-image-gallery": "^1.3.0",

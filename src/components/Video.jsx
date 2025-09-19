@@ -1,5 +1,5 @@
-import React from 'react';
 import { CarbonCloseOutline } from '../helpers/icons';
+import PropTypes from 'prop-types';
 
 function Video({ videoUrl, handleClose }) {
   return (
@@ -18,5 +18,10 @@ function Video({ videoUrl, handleClose }) {
     </div>
   );
 }
+
+Video.propTypes = {
+  videoUrl: PropTypes.string.isRequired,
+  handleClose: PropTypes.func.isRequired,
+};
 
 export default Video;

@@ -33,9 +33,14 @@ function Projects() {
             return (
               <div
                 key={index}
-                className='border border-slate-800 rounded-lg overflow-hidden shadow-xl'
+                className='border border-slate-800 rounded-lg overflow-hidden shadow-xl '
               >
-                <img className='w-full object-cover' src={project.img} alt='' />
+                <img
+                  className='w-full object-cover'
+                  src={project.img}
+                  alt=''
+                  loading='lazy'
+                />
                 <div className='p-4 h-48 xl:h-40 2xl:h-48'>
                   <h2 className='text-white text-lg font-semibold -mt-2'>
                     {project.title}
@@ -47,7 +52,7 @@ function Projects() {
                     {project.description}
                   </p>
                 </div>
-                <div className='p-4 flex gap-x-2'>
+                <div className='p-4 flex gap-x-2 font-medium justify-end'>
                   <a
                     className='px-4 py-2 bg-neutral-100 border-slate-800 border rounded-lg text-neutral-950 flex gap-2 mt-2 hover:bg-neutral-200'
                     href={project.github}

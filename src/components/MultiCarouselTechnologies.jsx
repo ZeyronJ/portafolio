@@ -1,8 +1,7 @@
-import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { space } from 'postcss/lib/list';
+import PropTypes from 'prop-types';
 
 function SampleNextArrow(props) {
   const { className, style, onClick, currentSlide } = props;
@@ -20,6 +19,13 @@ function SampleNextArrow(props) {
   );
 }
 
+SampleNextArrow.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object,
+  onClick: PropTypes.func,
+  currentSlide: PropTypes.number,
+};
+
 function SamplePrevArrow(props) {
   const { className, style, onClick, currentSlide } = props;
   return (
@@ -35,6 +41,13 @@ function SamplePrevArrow(props) {
     />
   );
 }
+
+SamplePrevArrow.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object,
+  onClick: PropTypes.func,
+  currentSlide: PropTypes.number,
+};
 
 export default function MultiCarouselTechnologies({ technologies }) {
   const settings = {
@@ -82,7 +95,7 @@ export default function MultiCarouselTechnologies({ technologies }) {
             key={index}
             className='pr-2' // Contenedor adicional con padding
           >
-            <div className='text-xs bg-slate-700 rounded-full px-2 py-1'>
+            <div className='text-xs border border-slate-800 bg-slate-900 rounded-full px-2 py-1'>
               <span>{tech}</span>
             </div>
           </div>
@@ -91,3 +104,7 @@ export default function MultiCarouselTechnologies({ technologies }) {
     </div>
   );
 }
+
+MultiCarouselTechnologies.propTypes = {
+  technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+};

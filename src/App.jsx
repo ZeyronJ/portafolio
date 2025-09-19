@@ -4,7 +4,6 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Experience from './components/Experience';
-import Particles from './components/Particles/Particles';
 
 function App() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -30,9 +29,7 @@ function App() {
           lazy: true,
         }}
         className='-z-10'
-      >
-        <Particles />
-      </div>
+      ></div>
       <div
         className='pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute'
         style={{

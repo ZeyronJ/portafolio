@@ -1,6 +1,7 @@
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import { CarbonCloseOutline } from '../helpers/icons';
+import PropTypes from 'prop-types';
 
 function Gallery({ images, handleClose }) {
   return (
@@ -17,5 +18,10 @@ function Gallery({ images, handleClose }) {
     </div>
   );
 }
+
+Gallery.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.object).isRequired,
+  handleClose: PropTypes.func.isRequired,
+};
 
 export default Gallery;

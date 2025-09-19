@@ -27,7 +27,7 @@ function Home() {
           <div className='mb-4 lg:mb-0 items-center flex flex-col lg:block'>
             <h1 className='text-3xl font-bold'>¡Hola!, Soy Javier 👋</h1>
             <p className='font-medium text-center text-balance lg:text-left'>
-              Ingeniero de Software | Desarrollador Full Stack
+              Ingeniero de Software | Desarrollador Full Stack IA
             </p>
             <div className='flex my-2 gap-x-2'>
               <a
@@ -93,14 +93,14 @@ function Home() {
           </div>
         </div>
         <div className='w-full lg:w-3/4 p-4 max-w-[1100px]'>
-          <h2 className='text-2xl font-bold mb-2'>Sobre mí</h2>
+          <h2 className='text-2xl font-bold'>Sobre mí</h2>
           <p>
-            Ingeniero Civil en Computación e Informática con más de dos años de
-            experiencia profesional. Especializado en el desarrollo de
-            aplicaciones web Full Stack e inteligencia artificial, enfocado en
-            crear soluciones eficientes y escalables.
+            Ingeniero Civil en Computación e Informática, con más de dos años de
+            experiencia profesional. Me he desempeñado principalmente en
+            proyectos de desarrollo de aplicaciones web Full Stack con
+            inteligencia artificial y automatizaciones.
           </p>
-          <div className='flex flex-col lg:flex-row mt-4'>
+          <div className='flex flex-col lg:flex-row mt-6'>
             <div className='mb-4 lg:mb-0 lg:mr-4'>
               <h3 className='font-semibold text-lg'>Educación:</h3>
               <ul>
