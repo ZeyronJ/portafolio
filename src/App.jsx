@@ -22,15 +22,6 @@ function App() {
       onMouseMove={updateCursorPosition}
     >
       <div
-        style={{
-          width: '100%',
-          height: '100vh',
-          position: 'absolute',
-          lazy: true,
-        }}
-        className='-z-10'
-      ></div>
-      <div
         className='pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute'
         style={{
           background: `radial-gradient(600px circle at ${cursorPosition.x}px ${cursorPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
