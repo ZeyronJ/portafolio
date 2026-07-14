@@ -1,0 +1,21 @@
+services:
+  portafolio:
+    build: .
+    container_name: portafolio
+    restart: always
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.portafolio.rule=Host(`javier.moaiverse.com`)'
+      - 'traefik.http.routers.portafolio.entrypoints=web,websecure'
+      - 'traefik.http.routers.portafolio.tls=true'
+      - 'traefik.http.routers.portafolio.tls.certresolver=mytlschallenge'
+      - 'traefik.http.routers.portafolio.priority=10'
+      - 'traefik.http.services.portafolio.loadbalancer.server.port=80'
+    expose:
+      - '80'
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
